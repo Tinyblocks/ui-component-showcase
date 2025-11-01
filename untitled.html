@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled UI Component Showcase</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%236B7280'/%3E%3Ctext x='50' y='70' font-family='system-ui, -apple-system, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3EU%3C/text%3E%3C/svg%3E">
+    <link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%236B7280'/%3E%3Ctext x='50' y='70' font-family='system-ui, -apple-system, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3EU%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles/untitled.css">
+</head>
+<body>
+    <nav class="untitled-nav">
+        <div class="untitled-container">
+            <div class="untitled-nav-brand">Untitled UI</div>
+            <div class="untitled-nav-links">
+                <a href="#dashboard-demo">Dashboard</a>
+                <a href="#pricing-demo">Pricing</a>
+                <a href="#testimonials-demo">Testimonials</a>
+                <a href="#components-demo">Components</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero untitled-section">
+        <div class="untitled-container">
+            <h1 class="untitled-h1">Untitled UI</h1>
+            <p class="untitled-subtitle">Beautiful UI components and templates</p>
+            <p class="untitled-description">Explore Untitled UI components through real-world examples and demos</p>
+            <div class="hero-cta" style="margin-top: 32px;">
+                <a href="https://www.untitledui.com/" target="_blank" class="untitled-btn-primary untitled-btn-large">Visit Untitled UI →</a>
+            </div>
+            <a href="#dashboard-demo" class="scroll-down-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="dashboard-demo" class="demo-section untitled-section">
+        <div class="untitled-container">
+            <div class="demo-header">
+                <h2 class="untitled-h2">Dashboard Example</h2>
+                <p class="demo-description">A complete dashboard built with Untitled UI components including cards, progress bars, badges, and activity feeds</p>
+            </div>
+            <div class="demo-content">
+                <div class="untitled-dashboard">
+                    <div class="dashboard-header">
+                        <div class="dashboard-title">Project Dashboard</div>
+                            <div class="dashboard-actions">
+                            <button class="dashboard-icon-btn" data-tooltip="Settings">⚙️</button>
+                            <button class="dashboard-icon-btn" data-tooltip="Notifications (3 new)">🔔</button>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="untitled-card-variant dashboard-stat-card">
+                            <div class="untitled-card-title stat-label">Active Projects</div>
+                            <div class="untitled-card-content">
+                                <div class="stat-value">12</div>
+                                <div class="untitled-badges" style="margin-top: 8px;">
+                                    <span class="untitled-badge untitled-badge-primary">Growing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="untitled-card-variant dashboard-stat-card">
+                            <div class="untitled-card-title stat-label">Tasks Completed</div>
+                            <div class="untitled-card-content">
+                                <div class="stat-value">89</div>
+                                <div class="untitled-badges" style="margin-top: 8px;">
+                                    <span class="untitled-badge untitled-badge-success">On Track</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="untitled-card-variant dashboard-stat-card">
+                            <div class="untitled-card-title stat-label">Team Members</div>
+                            <div class="untitled-card-content">
+                                <div class="stat-value">24</div>
+                                <div class="stat-change">8 online now</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="dashboard-main">
+                            <div class="dashboard-section untitled-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1.125rem; font-weight: 600; margin: 0;">Recent Projects</h3>
+                                    <button class="section-link">View All</button>
+                                </div>
+                                <div class="project-list">
+                                    <div class="project-item untitled-card">
+                                        <div class="project-info">
+                                            <div class="project-name">Website Redesign</div>
+                                            <div class="project-meta">Design Team • Due Dec 15</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">75%</div>
+                                                <div class="progress-bar"><div class="progress-fill" style="width: 75%; background: #6B7280;"></div></div>
+                                            </div>
+                                            <span class="untitled-badge untitled-badge-success">Active</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-item untitled-card">
+                                        <div class="project-info">
+                                            <div class="project-name">Mobile App Launch</div>
+                                            <div class="project-meta">Dev Team • Due Jan 10</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">45%</div>
+                                                <div class="progress-bar"><div class="progress-fill" style="width: 45%; background: #6B7280;"></div></div>
+                                            </div>
+                                            <span class="untitled-badge untitled-badge-warning">In Progress</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-item untitled-card">
+                                        <div class="project-info">
+                                            <div class="project-name">Marketing Campaign</div>
+                                            <div class="project-meta">Marketing • Due Dec 20</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">90%</div>
+                                                <div class="progress-bar"><div class="progress-fill" style="width: 90%; background: #6B7280;"></div></div>
+                                            </div>
+                                            <span class="untitled-badge untitled-badge-success">Almost Done</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-section untitled-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1.125rem; font-weight: 600; margin: 0;">Activity Feed</h3>
+                                </div>
+                                <div class="activity-feed">
+                                    <div class="activity-item">
+                                        <div class="activity-icon">✓</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text"><strong>Sarah Martinez</strong> completed task "Design Review"</div>
+                                            <div class="activity-time">2 hours ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="activity-icon">➕</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text"><strong>James Davis</strong> created new project "Mobile App Launch"</div>
+                                            <div class="activity-time">5 hours ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="activity-icon">💬</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text"><strong>Emily Wilson</strong> commented on "Website Redesign"</div>
+                                            <div class="activity-time">1 day ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-sidebar">
+                            <div class="dashboard-section untitled-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1.125rem; font-weight: 600; margin: 0;">Quick Stats</h3>
+                                </div>
+                                <div class="quick-stats">
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Tasks This Week</div>
+                                        <div class="quick-stat-value">47</div>
+                                    </div>
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Overdue</div>
+                                        <div class="quick-stat-value" style="color: #EF4444;">3</div>
+                                    </div>
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Upcoming Deadlines</div>
+                                        <div class="quick-stat-value">7</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-section untitled-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1.125rem; font-weight: 600; margin: 0;">Team Members</h3>
+                                </div>
+                                <div class="team-avatars">
+                                    <div class="team-avatar" data-tooltip="Sarah Martinez">SM</div>
+                                    <div class="team-avatar" data-tooltip="James Davis">JD</div>
+                                    <div class="team-avatar" data-tooltip="Emily Wilson">EW</div>
+                                    <div class="team-avatar" data-tooltip="21 more members">+21</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing-demo" class="demo-section untitled-section">
+        <div class="untitled-container">
+            <div class="demo-header">
+                <h2 class="untitled-h2">Pricing Example</h2>
+                <p class="demo-description">Untitled UI pricing cards with clean, modern design</p>
+            </div>
+            <div class="demo-content">
+                <div class="pricing-grid">
+                    <div class="untitled-card pricing-card">
+                    <h3 class="untitled-h3">Starter</h3>
+                    <div class="price">
+                        <span class="price-amount">$29</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 5 team members</li>
+                        <li>Unlimited projects</li>
+                        <li>Basic automation</li>
+                        <li>Email support</li>
+                    </ul>
+                    <button class="untitled-btn-secondary">Get Started</button>
+                </div>
+                <div class="untitled-card pricing-card featured">
+                    <div class="featured-badge">Popular</div>
+                    <h3 class="untitled-h3">Professional</h3>
+                    <div class="price">
+                        <span class="price-amount">$79</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 25 team members</li>
+                        <li>Advanced automation</li>
+                        <li>Priority support</li>
+                        <li>Analytics dashboard</li>
+                        <li>Custom workflows</li>
+                    </ul>
+                    <button class="untitled-btn-primary">Get Started</button>
+                </div>
+                <div class="untitled-card pricing-card">
+                    <h3 class="untitled-h3">Enterprise</h3>
+                    <div class="price">
+                        <span class="price-amount">Custom</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Unlimited team members</li>
+                        <li>Advanced security</li>
+                        <li>Dedicated support</li>
+                        <li>Custom integrations</li>
+                        <li>SLA guarantee</li>
+                    </ul>
+                    <button class="untitled-btn-secondary">Contact Sales</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials-demo" class="demo-section untitled-section">
+        <div class="untitled-container">
+            <div class="demo-header">
+                <h2 class="untitled-h2">Testimonials Example</h2>
+                <p class="demo-description">Untitled UI testimonial cards showcasing user feedback</p>
+            </div>
+            <div class="demo-content">
+            <div class="testimonials-grid">
+                <div class="untitled-card testimonial-card">
+                    <p class="testimonial-text">"TaskFlow Pro transformed how our remote team collaborates. The automation features save us hours every week."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div>
+                            <div class="author-name">Sarah Martinez</div>
+                            <div class="author-role">CEO, TechStart Inc.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="untitled-card testimonial-card">
+                    <p class="testimonial-text">"The analytics dashboard gives us insights we never had before. It's become essential to our planning process."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div>
+                            <div class="author-name">James Davis</div>
+                            <div class="author-role">Project Manager, DesignCo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="untitled-card testimonial-card">
+                    <p class="testimonial-text">"Custom workflows are a game-changer. We've built processes that perfectly match our team's needs."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EW</div>
+                        <div>
+                            <div class="author-name">Emily Wilson</div>
+                            <div class="author-role">CTO, Innovation Labs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="components-demo" class="demo-section untitled-section">
+        <div class="untitled-container">
+            <div class="demo-header">
+                <h2 class="untitled-h2">Component Showcase</h2>
+                <p class="demo-description">Explore Untitled UI's component library</p>
+            </div>
+            <div class="demo-content">
+                <div class="components-grid">
+                    <!-- Tabs -->
+                    <div class="untitled-card component-card">
+                        <h3 class="untitled-h3">Tabs</h3>
+                        <div class="untitled-tabs">
+                            <button class="untitled-tab untitled-tab-active" data-tab="dashboard">Dashboard</button>
+                            <button class="untitled-tab" data-tab="projects">Projects</button>
+                            <button class="untitled-tab" data-tab="settings">Settings</button>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-panel" data-panel="dashboard" style="display: block;">
+                                <p>View your dashboard metrics and analytics here.</p>
+                            </div>
+                            <div class="tab-panel" data-panel="projects" style="display: none;">
+                                <p>Manage your projects and tasks.</p>
+                            </div>
+                            <div class="tab-panel" data-panel="settings" style="display: none;">
+                                <p>Configure your account settings.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Switches -->
+                    <div class="untitled-card component-card">
+                        <h3 class="untitled-h3">Toggle Switches</h3>
+                        <div style="display: flex; flex-direction: column; gap: 16px;">
+                            <label style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                                <span>Enable notifications</span>
+                                <div class="untitled-switch-wrapper">
+                                    <input type="checkbox" class="untitled-switch" checked>
+                                    <span class="untitled-switch-slider"></span>
+                                </div>
+                            </label>
+                            <label style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                                <span>Dark mode</span>
+                                <div class="untitled-switch-wrapper">
+                                    <input type="checkbox" class="untitled-switch">
+                                    <span class="untitled-switch-slider"></span>
+                                </div>
+                            </label>
+                            <label style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                                <span>Auto-save</span>
+                                <div class="untitled-switch-wrapper">
+                                    <input type="checkbox" class="untitled-switch" checked>
+                                    <span class="untitled-switch-slider"></span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Accordion -->
+                    <div class="untitled-card component-card">
+                        <h3 class="untitled-h3">Accordion</h3>
+                        <div class="untitled-accordion">
+                            <div class="untitled-accordion-item">
+                                <button class="untitled-accordion-header untitled-accordion-active">
+                                    What is Untitled UI?
+                                    <span class="accordion-icon">▲</span>
+                                </button>
+                                <div class="untitled-accordion-panel" style="display: block;">
+                                    <p>Untitled UI is a premium collection of UI components and templates for building modern web applications.</p>
+                                </div>
+                            </div>
+                            <div class="untitled-accordion-item">
+                                <button class="untitled-accordion-header">
+                                    How do I get started?
+                                    <span class="accordion-icon">▼</span>
+                                </button>
+                                <div class="untitled-accordion-panel">
+                                    <p>You can purchase Untitled UI and download the components to use in your projects.</p>
+                                </div>
+                            </div>
+                            <div class="untitled-accordion-item">
+                                <button class="untitled-accordion-header">
+                                    Is it free to use?
+                                    <span class="accordion-icon">▼</span>
+                                </button>
+                                <div class="untitled-accordion-panel">
+                                    <p>Untitled UI is a premium product with a one-time purchase license.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Input & Dropdown -->
+                    <div class="untitled-card component-card">
+                        <h3 class="untitled-h3">Input & Dropdown</h3>
+                        <div style="display: flex; flex-direction: column; gap: 16px;">
+                            <input type="text" class="untitled-input" placeholder="Enter text...">
+                            <select class="untitled-select">
+                                <option>Select an option</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Badges -->
+                    <div class="untitled-card component-card">
+                        <h3 class="untitled-h3">Badges</h3>
+                        <div class="untitled-badges" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                            <span class="untitled-badge">Default</span>
+                            <span class="untitled-badge untitled-badge-primary">Primary</span>
+                            <span class="untitled-badge untitled-badge-success">Success</span>
+                            <span class="untitled-badge untitled-badge-warning">Warning</span>
+                            <span class="untitled-badge untitled-badge-danger">Danger</span>
+                        </div>
+                    </div>
+
+                    <!-- Table -->
+                    <div class="untitled-card component-card">
+                        <h3 class="untitled-h3">Table</h3>
+                        <table class="untitled-table">
+                            <thead>
+                                <tr>
+                                    <th>Project</th>
+                                    <th>Status</th>
+                                    <th>Progress</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Website Redesign</td>
+                                    <td><span class="untitled-badge untitled-badge-success">Active</span></td>
+                                    <td>75%</td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile App</td>
+                                    <td><span class="untitled-badge untitled-badge-warning">In Progress</span></td>
+                                    <td>45%</td>
+                                </tr>
+                                <tr>
+                                    <td>Marketing Campaign</td>
+                                    <td><span class="untitled-badge untitled-badge-success">Almost Done</span></td>
+                                    <td>90%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="untitled-footer">
+        <div class="untitled-container">
+            <div class="footer-content">
+                <div class="footer-brand">Untitled UI</div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="https://www.untitledui.com/" target="_blank">Official Website</a>
+                        <a href="https://www.untitledui.com/docs" target="_blank">Documentation</a>
+                        <a href="https://github.com" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Untitled UI Component Showcase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/untitled.js"></script>
+</body>
+</html>

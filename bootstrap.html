@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Component Showcase</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%237952B3'/%3E%3Ctext x='50' y='70' font-family='system-ui, -apple-system, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+    <link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%237952B3'/%3E%3Ctext x='50' y='70' font-family='system-ui, -apple-system, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+</head>
+<body>
+    <nav class="bootstrap-nav">
+        <div class="bootstrap-container">
+            <div class="bootstrap-nav-brand">Bootstrap</div>
+            <div class="bootstrap-nav-links">
+                <a href="#dashboard-demo">Dashboard</a>
+                <a href="#pricing-demo">Pricing</a>
+                <a href="#testimonials-demo">Testimonials</a>
+                <a href="#components-demo">Components</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero bootstrap-section">
+        <div class="bootstrap-container">
+            <h1 class="bootstrap-h1">Bootstrap</h1>
+            <p class="bootstrap-subtitle">The world's most popular front-end component library</p>
+            <p class="bootstrap-description">Explore Bootstrap components through real-world examples and demos</p>
+            <div class="hero-cta" style="margin-top: 32px;">
+                <a href="https://getbootstrap.com/" target="_blank" class="bootstrap-btn-contained bootstrap-btn-large">Visit Bootstrap →</a>
+            </div>
+            <a href="#dashboard-demo" class="scroll-down-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="dashboard-demo" class="demo-section bootstrap-section">
+        <div class="bootstrap-container">
+            <div class="demo-header">
+                <h2 class="bootstrap-h2">Dashboard Example</h2>
+                <p class="demo-description">A complete dashboard built with Bootstrap components including cards, progress bars, badges, and activity feeds</p>
+            </div>
+            <div class="demo-content">
+                <div class="bootstrap-dashboard">
+                    <div class="dashboard-header">
+                        <div class="dashboard-title">Project Dashboard</div>
+                        <div class="dashboard-actions">
+                            <button class="dashboard-icon-btn" data-tooltip="Settings">⚙️</button>
+                            <button class="dashboard-icon-btn" data-tooltip="Notifications (3 new)">🔔</button>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stat-card bootstrap-card">
+                            <div class="stat-label">Active Projects</div>
+                            <div class="stat-value">12</div>
+                            <div class="stat-change">+3 this month</div>
+                            <span class="bootstrap-badge bootstrap-badge-primary" style="position: static; margin-top: 8px;">Active</span>
+                        </div>
+                        <div class="dashboard-stat-card bootstrap-card">
+                            <div class="stat-label">Tasks Completed</div>
+                            <div class="stat-value">89</div>
+                            <div class="stat-change">+12 today</div>
+                            <span class="bootstrap-badge bootstrap-badge-success" style="position: static; margin-top: 8px;">On Track</span>
+                        </div>
+                        <div class="dashboard-stat-card bootstrap-card">
+                            <div class="stat-label">Team Members</div>
+                            <div class="stat-value">24</div>
+                            <div class="stat-change">8 online now</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="dashboard-main">
+                            <div class="dashboard-section bootstrap-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1.125rem; font-weight: 500; margin: 0; color: #212529;">Recent Projects</h3>
+                                    <button class="section-link" style="background: none; border: none; color: #0d6efd; font-size: 0.875rem; cursor: pointer;">View All</button>
+                                </div>
+                                <div class="project-list">
+                                    <div class="project-item bootstrap-card">
+                                        <div class="project-info">
+                                            <div class="project-name">Website Redesign</div>
+                                            <div class="project-meta">Design Team • Due Dec 15</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">75%</div>
+                                                <div class="bootstrap-progress"><div class="bootstrap-progress-bar" style="width: 75%"></div></div>
+                                            </div>
+                                            <span class="bootstrap-badge bootstrap-badge-success">Active</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-item bootstrap-card">
+                                        <div class="project-info">
+                                            <div class="project-name">Mobile App Launch</div>
+                                            <div class="project-meta">Dev Team • Due Jan 10</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">45%</div>
+                                                <div class="bootstrap-progress"><div class="bootstrap-progress-bar" style="width: 45%"></div></div>
+                                            </div>
+                                            <span class="bootstrap-badge bootstrap-badge-warning">In Progress</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-item bootstrap-card">
+                                        <div class="project-info">
+                                            <div class="project-name">Marketing Campaign</div>
+                                            <div class="project-meta">Marketing • Due Dec 20</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">90%</div>
+                                                <div class="bootstrap-progress"><div class="bootstrap-progress-bar" style="width: 90%"></div></div>
+                                            </div>
+                                            <span class="bootstrap-badge bootstrap-badge-success">Almost Done</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-section bootstrap-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1.125rem; font-weight: 500; margin: 0; color: #212529;">Activity Feed</h3>
+                                </div>
+                                <div class="activity-feed">
+                                    <div class="activity-item">
+                                        <div class="activity-icon">✓</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text"><strong>Sarah Martinez</strong> completed task "Design Review"</div>
+                                            <div class="activity-time">2 hours ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="activity-icon">➕</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text"><strong>James Davis</strong> created new project "Mobile App Launch"</div>
+                                            <div class="activity-time">5 hours ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="activity-icon">💬</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text"><strong>Emily Wilson</strong> commented on "Website Redesign"</div>
+                                            <div class="activity-time">1 day ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-sidebar">
+                            <div class="dashboard-section bootstrap-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1.125rem; font-weight: 500; margin: 0; color: #212529;">Quick Stats</h3>
+                                </div>
+                                <div class="quick-stats">
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Tasks This Week</div>
+                                        <div class="quick-stat-value">47</div>
+                                    </div>
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Overdue</div>
+                                        <div class="quick-stat-value" style="color: #dc3545;">3</div>
+                                    </div>
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Upcoming Deadlines</div>
+                                        <div class="quick-stat-value">7</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-section bootstrap-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1.125rem; font-weight: 500; margin: 0; color: #212529;">Team Members</h3>
+                                </div>
+                                <div class="team-avatars">
+                                    <div class="team-avatar" data-tooltip="Sarah Martinez">SM</div>
+                                    <div class="team-avatar" data-tooltip="James Davis">JD</div>
+                                    <div class="team-avatar" data-tooltip="Emily Wilson">EW</div>
+                                    <div class="team-avatar" data-tooltip="21 more members">+21</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing-demo" class="demo-section bootstrap-section">
+        <div class="bootstrap-container">
+            <div class="demo-header">
+                <h2 class="bootstrap-h2">Pricing Example</h2>
+                <p class="demo-description">Bootstrap pricing cards with clean, modern design</p>
+            </div>
+            <div class="demo-content">
+                <div class="pricing-grid">
+                    <div class="bootstrap-card pricing-card">
+                        <h3 class="bootstrap-h3">Starter</h3>
+                        <div class="price">
+                            <span class="price-amount">$29</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Up to 5 team members</li>
+                            <li>Unlimited projects</li>
+                            <li>Basic automation</li>
+                            <li>Email support</li>
+                        </ul>
+                        <button class="bootstrap-btn-outlined">Get Started</button>
+                    </div>
+                    <div class="bootstrap-card pricing-card featured">
+                        <div class="featured-badge">Popular</div>
+                        <h3 class="bootstrap-h3">Professional</h3>
+                        <div class="price">
+                            <span class="price-amount">$79</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Up to 25 team members</li>
+                            <li>Advanced automation</li>
+                            <li>Priority support</li>
+                            <li>Analytics dashboard</li>
+                            <li>Custom workflows</li>
+                        </ul>
+                        <button class="bootstrap-btn-contained">Get Started</button>
+                    </div>
+                    <div class="bootstrap-card pricing-card">
+                        <h3 class="bootstrap-h3">Enterprise</h3>
+                        <div class="price">
+                            <span class="price-amount">Custom</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Unlimited team members</li>
+                            <li>Advanced security</li>
+                            <li>Dedicated support</li>
+                            <li>Custom integrations</li>
+                            <li>SLA guarantee</li>
+                        </ul>
+                        <button class="bootstrap-btn-outlined">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials-demo" class="demo-section bootstrap-section">
+        <div class="bootstrap-container">
+            <div class="demo-header">
+                <h2 class="bootstrap-h2">Testimonials Example</h2>
+                <p class="demo-description">Bootstrap testimonial cards showcasing user feedback</p>
+            </div>
+            <div class="demo-content">
+            <div class="testimonials-grid">
+                <div class="bootstrap-card testimonial-card">
+                    <p class="testimonial-text">"TaskFlow Pro transformed how our remote team collaborates. The automation features save us hours every week."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div>
+                            <div class="author-name">Sarah Martinez</div>
+                            <div class="author-role">CEO, TechStart Inc.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bootstrap-card testimonial-card">
+                    <p class="testimonial-text">"The analytics dashboard gives us insights we never had before. It's become essential to our planning process."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div>
+                            <div class="author-name">James Davis</div>
+                            <div class="author-role">Project Manager, DesignCo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bootstrap-card testimonial-card">
+                    <p class="testimonial-text">"Custom workflows are a game-changer. We've built processes that perfectly match our team's needs."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EW</div>
+                        <div>
+                            <div class="author-name">Emily Wilson</div>
+                            <div class="author-role">CTO, Innovation Labs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="components-demo" class="demo-section bootstrap-section">
+        <div class="bootstrap-container">
+            <div class="demo-header">
+                <h2 class="bootstrap-h2">Component Showcase</h2>
+                <p class="demo-description">Explore Bootstrap's component library</p>
+            </div>
+            <div class="demo-content">
+                <div class="components-grid">
+                    <!-- Tabs -->
+                    <div class="bootstrap-card component-card">
+                        <h3 class="bootstrap-h3">Tabs</h3>
+                        <div class="bootstrap-tabs">
+                            <button class="bootstrap-tab bootstrap-tab-active" data-tab="dashboard">Dashboard</button>
+                            <button class="bootstrap-tab" data-tab="projects">Projects</button>
+                            <button class="bootstrap-tab" data-tab="settings">Settings</button>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-panel" data-panel="dashboard" style="display: block;">
+                                <p>View your dashboard metrics and analytics here.</p>
+                            </div>
+                            <div class="tab-panel" data-panel="projects" style="display: none;">
+                                <p>Manage your projects and tasks.</p>
+                            </div>
+                            <div class="tab-panel" data-panel="settings" style="display: none;">
+                                <p>Configure your account settings.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Switches -->
+                    <div class="bootstrap-card component-card">
+                        <h3 class="bootstrap-h3">Toggle Switches</h3>
+                        <div style="display: flex; flex-direction: column; gap: 16px;">
+                            <label style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                                <span>Enable notifications</span>
+                                <div class="bootstrap-switch-wrapper">
+                                    <input type="checkbox" class="bootstrap-switch" checked>
+                                    <span class="bootstrap-switch-slider"></span>
+                                </div>
+                            </label>
+                            <label style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                                <span>Dark mode</span>
+                                <div class="bootstrap-switch-wrapper">
+                                    <input type="checkbox" class="bootstrap-switch">
+                                    <span class="bootstrap-switch-slider"></span>
+                                </div>
+                            </label>
+                            <label style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                                <span>Auto-save</span>
+                                <div class="bootstrap-switch-wrapper">
+                                    <input type="checkbox" class="bootstrap-switch" checked>
+                                    <span class="bootstrap-switch-slider"></span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Accordion -->
+                    <div class="bootstrap-card component-card">
+                        <h3 class="bootstrap-h3">Accordion</h3>
+                        <div class="bootstrap-accordion">
+                            <div class="bootstrap-accordion-item">
+                                <button class="bootstrap-accordion-header bootstrap-accordion-active">
+                                    What is Bootstrap?
+                                    <span class="accordion-icon">▲</span>
+                                </button>
+                                <div class="bootstrap-accordion-panel" style="display: block;">
+                                    <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.</p>
+                                </div>
+                            </div>
+                            <div class="bootstrap-accordion-item">
+                                <button class="bootstrap-accordion-header">
+                                    How do I get started?
+                                    <span class="accordion-icon">▼</span>
+                                </button>
+                                <div class="bootstrap-accordion-panel">
+                                    <p>You can start by including Bootstrap CSS and JS in your HTML file, or install it via npm.</p>
+                                </div>
+                            </div>
+                            <div class="bootstrap-accordion-item">
+                                <button class="bootstrap-accordion-header">
+                                    Is it free to use?
+                                    <span class="accordion-icon">▼</span>
+                                </button>
+                                <div class="bootstrap-accordion-panel">
+                                    <p>Yes, Bootstrap is completely free and open-source under the MIT license.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Input & Dropdown -->
+                    <div class="bootstrap-card component-card">
+                        <h3 class="bootstrap-h3">Input & Dropdown</h3>
+                        <div style="display: flex; flex-direction: column; gap: 16px;">
+                            <input type="text" class="bootstrap-input" placeholder="Enter text...">
+                            <select class="bootstrap-select">
+                                <option>Select an option</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Badges -->
+                    <div class="bootstrap-card component-card">
+                        <h3 class="bootstrap-h3">Badges</h3>
+                        <div class="bootstrap-badges" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                            <span class="bootstrap-badge">Default</span>
+                            <span class="bootstrap-badge bootstrap-badge-primary">Primary</span>
+                            <span class="bootstrap-badge bootstrap-badge-success">Success</span>
+                            <span class="bootstrap-badge bootstrap-badge-warning">Warning</span>
+                            <span class="bootstrap-badge bootstrap-badge-danger">Danger</span>
+                        </div>
+                    </div>
+
+                    <!-- Table -->
+                    <div class="bootstrap-card component-card">
+                        <h3 class="bootstrap-h3">Table</h3>
+                        <table class="bootstrap-table">
+                            <thead>
+                                <tr>
+                                    <th>Project</th>
+                                    <th>Status</th>
+                                    <th>Progress</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Website Redesign</td>
+                                    <td><span class="bootstrap-badge bootstrap-badge-success">Active</span></td>
+                                    <td>75%</td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile App</td>
+                                    <td><span class="bootstrap-badge bootstrap-badge-warning">In Progress</span></td>
+                                    <td>45%</td>
+                                </tr>
+                                <tr>
+                                    <td>Marketing Campaign</td>
+                                    <td><span class="bootstrap-badge bootstrap-badge-success">Almost Done</span></td>
+                                    <td>90%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bootstrap-footer">
+        <div class="bootstrap-container">
+            <div class="footer-content">
+                <div class="footer-brand">Bootstrap</div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="https://getbootstrap.com/" target="_blank">Official Website</a>
+                        <a href="https://getbootstrap.com/docs/" target="_blank">Documentation</a>
+                        <a href="https://github.com/twbs/bootstrap" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bootstrap Component Showcase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/bootstrap.js"></script>
+</body>
+</html>

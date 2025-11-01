@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ant Design Component Showcase</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231890FF'/%3E%3Ctext x='50' y='70' font-family='system-ui, -apple-system, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+    <link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231890FF'/%3E%3Ctext x='50' y='70' font-family='system-ui, -apple-system, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles/antd.css">
+    <link href="https://fonts.googleapis.com/css2?family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" rel="stylesheet">
+</head>
+<body>
+    <nav class="antd-nav">
+        <div class="antd-container">
+            <div class="antd-nav-brand">Ant Design</div>
+            <div class="antd-nav-links">
+                <a href="#dashboard-demo">Dashboard</a>
+                <a href="#pricing-demo">Pricing</a>
+                <a href="#testimonials-demo">Testimonials</a>
+                <a href="#components-demo">Components</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero antd-section">
+        <div class="antd-container">
+            <h1 class="antd-h1">Ant Design</h1>
+            <p class="antd-subtitle">An enterprise-class UI design language and React UI library</p>
+            <p class="antd-description">Explore Ant Design components through real-world examples and demos</p>
+            <div class="hero-cta" style="margin-top: 32px;">
+                <a href="https://ant.design/" target="_blank" class="antd-btn-primary antd-btn-large">Visit Ant Design →</a>
+            </div>
+            <a href="#dashboard-demo" class="scroll-down-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="dashboard-demo" class="demo-section antd-section">
+        <div class="antd-container">
+            <div class="demo-header">
+                <h2 class="antd-h2">Dashboard Example</h2>
+                <p class="demo-description">A complete dashboard built with Ant Design components including cards, progress bars, tags, and timelines</p>
+            </div>
+            <div class="demo-content">
+                <div class="antd-dashboard">
+                    <div class="dashboard-header">
+                        <div class="dashboard-title">Project Dashboard</div>
+                        <div class="dashboard-actions">
+                            <button class="dashboard-icon-btn" data-tooltip="Settings">⚙️</button>
+                            <button class="dashboard-icon-btn" data-tooltip="Notifications (3 new)">🔔</button>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stat-card">
+                            <div class="stat-label">Active Projects</div>
+                            <div class="stat-value">12</div>
+                            <div class="stat-change">+3 this month</div>
+                        </div>
+                        <div class="dashboard-stat-card">
+                            <div class="stat-label">Tasks Completed</div>
+                            <div class="stat-value">89</div>
+                            <div class="stat-change">+12 today</div>
+                        </div>
+                        <div class="dashboard-stat-card">
+                            <div class="stat-label">Team Members</div>
+                            <div class="stat-value">24</div>
+                            <div class="stat-change">8 online now</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="dashboard-main">
+                            <div class="dashboard-section antd-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 16px; font-weight: 500; margin: 0;">Recent Projects</h3>
+                                    <a href="#" class="section-link" style="color: #1890ff; text-decoration: none; font-size: 14px;">View All</a>
+                                </div>
+                                <div class="project-list">
+                                    <div class="project-item antd-card">
+                                        <div class="project-info">
+                                            <div class="project-name">Website Redesign</div>
+                                            <div class="project-meta">Design Team • Due Dec 15</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">75%</div>
+                                                <div class="antd-progress"><div class="antd-progress-bar" style="width: 75%"></div></div>
+                                            </div>
+                                            <span class="antd-tag antd-tag-green">Active</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-item antd-card">
+                                        <div class="project-info">
+                                            <div class="project-name">Mobile App Launch</div>
+                                            <div class="project-meta">Dev Team • Due Jan 10</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">45%</div>
+                                                <div class="antd-progress"><div class="antd-progress-bar" style="width: 45%"></div></div>
+                                            </div>
+                                            <span class="antd-tag antd-tag-orange">In Progress</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-item antd-card">
+                                        <div class="project-info">
+                                            <div class="project-name">Marketing Campaign</div>
+                                            <div class="project-meta">Marketing • Due Dec 20</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">90%</div>
+                                                <div class="antd-progress"><div class="antd-progress-bar" style="width: 90%"></div></div>
+                                            </div>
+                                            <span class="antd-tag antd-tag-green">Almost Done</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-section antd-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 16px; font-weight: 500; margin: 0;">Activity Timeline</h3>
+                                </div>
+                                <div class="dashboard-timeline">
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot timeline-dot-success"></div>
+                                        <div class="timeline-content">
+                                            <div class="timeline-title"><strong>Sarah Martinez</strong> completed task "Design Review"</div>
+                                            <div class="timeline-time">2 hours ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="timeline-title"><strong>James Davis</strong> created new project "Mobile App Launch"</div>
+                                            <div class="timeline-time">5 hours ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-dot"></div>
+                                        <div class="timeline-content">
+                                            <div class="timeline-title"><strong>Emily Wilson</strong> commented on "Website Redesign"</div>
+                                            <div class="timeline-time">1 day ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-sidebar">
+                            <div class="dashboard-section antd-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 16px; font-weight: 500; margin: 0;">Quick Stats</h3>
+                                </div>
+                                <div class="quick-stats">
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Tasks This Week</div>
+                                        <div class="quick-stat-value">47</div>
+                                    </div>
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Overdue</div>
+                                        <div class="quick-stat-value" style="color: #ff4d4f;">3</div>
+                                    </div>
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Upcoming Deadlines</div>
+                                        <div class="quick-stat-value">7</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-section antd-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 16px; font-weight: 500; margin: 0;">Team Members</h3>
+                                </div>
+                                <div class="team-avatars">
+                                    <div class="team-avatar" data-tooltip="Sarah Martinez - Designer">SM</div>
+                                    <div class="team-avatar" data-tooltip="James Davis - Developer">JD</div>
+                                    <div class="team-avatar" data-tooltip="Emily Wilson - PM">EW</div>
+                                    <div class="team-avatar" data-tooltip="21 more team members">+21</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing-demo" class="demo-section antd-section">
+        <div class="antd-container">
+            <div class="demo-header">
+                <h2 class="antd-h2">Pricing Example</h2>
+                <p class="demo-description">Pricing cards built with Ant Design components showcasing cards, buttons, and typography</p>
+            </div>
+            <div class="demo-content">
+                <div class="pricing-grid">
+                <div class="antd-card pricing-card">
+                    <h3 class="antd-h3">Starter</h3>
+                    <div class="price">
+                        <span class="price-amount">$29</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 5 team members</li>
+                        <li>Unlimited projects</li>
+                        <li>Basic automation</li>
+                        <li>Email support</li>
+                    </ul>
+                    <button class="antd-btn-default">Get Started</button>
+                </div>
+                <div class="antd-card pricing-card featured">
+                    <div class="featured-badge">Popular</div>
+                    <h3 class="antd-h3">Professional</h3>
+                    <div class="price">
+                        <span class="price-amount">$79</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 25 team members</li>
+                        <li>Advanced automation</li>
+                        <li>Priority support</li>
+                        <li>Analytics dashboard</li>
+                        <li>Custom workflows</li>
+                    </ul>
+                    <button class="antd-btn-primary">Get Started</button>
+                </div>
+                <div class="antd-card pricing-card">
+                    <h3 class="antd-h3">Enterprise</h3>
+                    <div class="price">
+                        <span class="price-amount">Custom</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Unlimited team members</li>
+                        <li>Advanced security</li>
+                        <li>Dedicated support</li>
+                        <li>Custom integrations</li>
+                        <li>SLA guarantee</li>
+                    </ul>
+                    <button class="antd-btn-default">Contact Sales</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials-demo" class="demo-section antd-section">
+        <div class="antd-container">
+            <div class="demo-header">
+                <h2 class="antd-h2">Testimonials Example</h2>
+                <p class="demo-description">Testimonial cards showcasing Ant Design's card components with avatar and typography</p>
+            </div>
+            <div class="demo-content">
+                <div class="testimonials-grid">
+                <div class="antd-card testimonial-card">
+                    <p class="testimonial-text">"TaskFlow Pro transformed how our remote team collaborates. The automation features save us hours every week."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div>
+                            <div class="author-name">Sarah Martinez</div>
+                            <div class="author-role">CEO, TechStart Inc.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="antd-card testimonial-card">
+                    <p class="testimonial-text">"The analytics dashboard gives us insights we never had before. It's become essential to our planning process."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div>
+                            <div class="author-name">James Davis</div>
+                            <div class="author-role">Project Manager, DesignCo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="antd-card testimonial-card">
+                    <p class="testimonial-text">"Custom workflows are a game-changer. We've built processes that perfectly match our team's needs."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EW</div>
+                        <div>
+                            <div class="author-name">Emily Wilson</div>
+                            <div class="author-role">CTO, Innovation Labs</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="components-demo" class="demo-section antd-section">
+        <div class="antd-container">
+            <div class="demo-header">
+                <h2 class="antd-h2">Individual Components</h2>
+                <p class="demo-description">Explore Ant Design's core components in isolation</p>
+            </div>
+            <div class="components-grid">
+                <!-- Tabs Component -->
+                <div class="antd-card component-card">
+                    <h3 class="antd-h3">Tabs</h3>
+                    <div class="antd-tabs">
+                        <button class="antd-tab antd-tab-active" data-tab="dashboard">Dashboard</button>
+                        <button class="antd-tab" data-tab="projects">Projects</button>
+                        <button class="antd-tab" data-tab="settings">Settings</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-panel active" data-panel="dashboard">
+                            <p style="margin-top: 16px; color: rgba(0, 0, 0, 0.65);">View your dashboard metrics and analytics here.</p>
+                        </div>
+                        <div class="tab-panel" data-panel="projects" style="display: none;">
+                            <p style="margin-top: 16px; color: rgba(0, 0, 0, 0.65);">Manage all your projects from this view.</p>
+                        </div>
+                        <div class="tab-panel" data-panel="settings" style="display: none;">
+                            <p style="margin-top: 16px; color: rgba(0, 0, 0, 0.65);">Configure your account settings and preferences.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Toggle Switches -->
+                <div class="antd-card component-card">
+                    <h3 class="antd-h3">Toggle Switches</h3>
+                    <div class="antd-switches-demo">
+                        <label class="antd-switch-label">
+                            <span>Enable notifications</span>
+                            <div class="antd-switch-wrapper">
+                                <input type="checkbox" class="antd-switch" checked>
+                                <span class="antd-switch-slider"></span>
+                            </div>
+                        </label>
+                        <label class="antd-switch-label">
+                            <span>Dark mode</span>
+                            <div class="antd-switch-wrapper">
+                                <input type="checkbox" class="antd-switch">
+                                <span class="antd-switch-slider"></span>
+                            </div>
+                        </label>
+                        <label class="antd-switch-label">
+                            <span>Auto-save</span>
+                            <div class="antd-switch-wrapper">
+                                <input type="checkbox" class="antd-switch" checked>
+                                <span class="antd-switch-slider"></span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Input & Dropdown -->
+                <div class="antd-card component-card">
+                    <h3 class="antd-h3">Input & Dropdown</h3>
+                    <div class="antd-form-demo">
+                        <div class="antd-input-group">
+                            <input type="text" class="antd-input" placeholder="Enter project name" />
+                        </div>
+                        <div class="antd-input-group">
+                            <select class="antd-select">
+                                <option>Select priority</option>
+                                <option>High</option>
+                                <option>Medium</option>
+                                <option>Low</option>
+                            </select>
+                        </div>
+                        <div class="antd-input-group">
+                            <input type="date" class="antd-input antd-date-picker" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <div class="antd-card component-card">
+                    <h3 class="antd-h3">Timeline</h3>
+                    <div class="antd-timeline">
+                        <div class="antd-timeline-item">
+                            <div class="antd-timeline-dot"></div>
+                            <div class="antd-timeline-content">
+                                <div class="antd-timeline-title">Project started</div>
+                                <div class="antd-timeline-time">2 hours ago</div>
+                            </div>
+                        </div>
+                        <div class="antd-timeline-item">
+                            <div class="antd-timeline-dot antd-timeline-dot-success"></div>
+                            <div class="antd-timeline-content">
+                                <div class="antd-timeline-title">Task completed</div>
+                                <div class="antd-timeline-time">1 hour ago</div>
+                            </div>
+                        </div>
+                        <div class="antd-timeline-item">
+                            <div class="antd-timeline-dot"></div>
+                            <div class="antd-timeline-content">
+                                <div class="antd-timeline-title">In progress</div>
+                                <div class="antd-timeline-time">Just now</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Steps/Progress -->
+                <div class="antd-card component-card">
+                    <h3 class="antd-h3">Steps</h3>
+                    <div class="antd-steps">
+                        <div class="antd-step antd-step-finish">
+                            <div class="antd-step-icon">✓</div>
+                            <div class="antd-step-title">Design</div>
+                        </div>
+                        <div class="antd-step antd-step-active">
+                            <div class="antd-step-icon">2</div>
+                            <div class="antd-step-title">Develop</div>
+                        </div>
+                        <div class="antd-step">
+                            <div class="antd-step-icon">3</div>
+                            <div class="antd-step-title">Deploy</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tags -->
+                <div class="antd-card component-card">
+                    <h3 class="antd-h3">Tags</h3>
+                    <div class="antd-tags">
+                        <span class="antd-tag">React</span>
+                        <span class="antd-tag antd-tag-blue">Frontend</span>
+                        <span class="antd-tag antd-tag-green">Success</span>
+                        <span class="antd-tag antd-tag-orange">Warning</span>
+                        <span class="antd-tag antd-tag-red">Error</span>
+                    </div>
+                </div>
+
+                <!-- Table -->
+                <div class="antd-card component-card component-card-wide">
+                    <h3 class="antd-h3">Data Table</h3>
+                    <div class="antd-table-wrapper">
+                        <table class="antd-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Status</th>
+                                    <th>Progress</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Project Alpha</td>
+                                    <td><span class="antd-tag antd-tag-green">Active</span></td>
+                                    <td><div class="antd-progress"><div class="antd-progress-bar" style="width: 70%"></div></div></td>
+                                    <td><a href="#" class="antd-link">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Project Beta</td>
+                                    <td><span class="antd-tag antd-tag-orange">Pending</span></td>
+                                    <td><div class="antd-progress"><div class="antd-progress-bar" style="width: 30%"></div></div></td>
+                                    <td><a href="#" class="antd-link">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Project Gamma</td>
+                                    <td><span class="antd-tag antd-tag-green">Active</span></td>
+                                    <td><div class="antd-progress"><div class="antd-progress-bar" style="width: 90%"></div></div></td>
+                                    <td><a href="#" class="antd-link">View</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="antd-footer">
+        <div class="antd-container">
+            <div class="footer-content">
+                <div class="footer-brand">Ant Design</div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="https://ant.design/" target="_blank">Official Website</a>
+                        <a href="https://ant.design/docs/react/introduce" target="_blank">Documentation</a>
+                        <a href="https://github.com/ant-design/ant-design" target="_blank">GitHub</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Community</h4>
+                        <a href="https://ant.design/docs/react/introduce" target="_blank">Getting Started</a>
+                        <a href="https://ant.design/changelog" target="_blank">Changelog</a>
+                        <a href="https://github.com/ant-design/ant-design/discussions" target="_blank">Discussions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ant Design Component Showcase Demo</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/antd.js"></script>
+</body>
+</html>

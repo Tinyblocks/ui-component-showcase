@@ -1,0 +1,1546 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Prevent automatic scroll to hash on page load */
+html {
+    scroll-behavior: auto;
+}
+
+/* Enable smooth scrolling only via JavaScript */
+html.smooth-scroll {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: '', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.5;
+    color: #1a202c;
+    background: #ffffff;
+    min-height: 100vh;
+}
+
+.chakra-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Navigation */
+.chakra-nav {
+    background: #ffffff;
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 73px;
+    box-sizing: border-box;
+}
+
+.chakra-nav > .chakra-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chakra-nav-brand {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #319795;
+}
+
+.chakra-nav-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.chakra-nav-links a {
+    color: #1a202c;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+
+.chakra-nav-links a:hover {
+    color: #319795;
+}
+
+/* Buttons */
+.chakra-btn-contained {
+    background-color: #319795;
+    color: #ffffff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.02857em;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+
+.chakra-btn-contained:hover {
+    background-color: #2c7a7b;
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+
+.chakra-btn-outlined {
+    background-color: transparent;
+    color: #319795;
+    border: 1px solid rgba(49, 151, 149, 0.5);
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.chakra-btn-outlined:hover {
+    background-color: rgba(49, 151, 149, 0.04);
+    border-color: #319795;
+}
+
+.chakra-btn-large {
+    padding: 12px 30px;
+    font-size: 0.9375rem;
+}
+
+/* Sections */
+.chakra-section {
+    padding: 80px 0;
+}
+
+/* Typography */
+.chakra-h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.167;
+    letter-spacing: -0.01562em;
+    margin-bottom: 16px;
+}
+
+.chakra-h2 {
+    font-size: 2.125rem;
+    font-weight: 400;
+    line-height: 1.235;
+    letter-spacing: 0.00735em;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.chakra-h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.334;
+    letter-spacing: 0em;
+    margin-bottom: 8px;
+}
+
+.chakra-subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    color: #4a5568;
+    margin-bottom: 32px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+    text-align: center;
+    padding: 0;
+    height: calc(100vh - 73px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.hero .chakra-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.chakra-description {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 32px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.hero .chakra-btn-contained {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.scroll-down-arrow {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2px solid #319795;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a202c;
+    text-decoration: none;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.scroll-down-arrow:hover {
+    background: #319795;
+    color: #ffffff;
+    border-color: #319795;
+    transform: translateX(-50%) translateY(4px);
+    box-shadow: 0 4px 12px rgba(49, 151, 149, 0.3);
+}
+
+.scroll-down-arrow svg {
+    width: 20px;
+    height: 20px;
+}
+
+.hero.chakra-section {
+    padding: 0;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.hero-image {
+    margin-top: 64px;
+}
+
+.hero-placeholder {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 5px 8px 0px rgba(0,0,0,0.14), 0px 1px 14px 0px rgba(0,0,0,0.12);
+    color: #4a5568;
+    font-size: 1.125rem;
+    min-height: 400px;
+}
+
+/* Chakra Dashboard */
+.chakra-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.dashboard-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.dashboard-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.dashboard-icon-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e0;
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.dashboard-icon-btn:hover {
+    background: #f7fafc;
+}
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.dashboard-stat-card {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+    color: #4a5568;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-value {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 4px;
+}
+
+.stat-change {
+    font-size: 0.75rem;
+    color: #4a5568;
+    margin-top: 4px;
+}
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.dashboard-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.dashboard-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.dashboard-section {
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.section-link:hover {
+    opacity: 0.8;
+}
+
+/* Project List */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-item {
+    padding: 16px;
+}
+
+.project-info {
+    margin-bottom: 12px;
+}
+
+.project-name {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 6px;
+}
+
+.project-meta {
+    font-size: 0.75rem;
+    color: #718096;
+}
+
+.project-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.project-progress {
+    flex: 1;
+}
+
+.progress-label {
+    font-size: 0.75rem;
+    color: #718096;
+    margin-bottom: 4px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s;
+}
+
+/* Activity Feed */
+.activity-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.activity-item {
+    display: flex;
+    gap: 12px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.activity-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #bee3f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+    color: #3182ce;
+}
+
+.activity-content {
+    flex: 1;
+}
+
+.activity-text {
+    font-size: 0.875rem;
+    color: #1a202c;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.activity-text strong {
+    font-weight: 600;
+}
+
+.activity-time {
+    font-size: 0.75rem;
+    color: #718096;
+}
+
+/* Quick Stats */
+.quick-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.quick-stat-item {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.quick-stat-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.quick-stat-label {
+    font-size: 0.75rem;
+    color: #718096;
+    margin-bottom: 6px;
+}
+
+.quick-stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a202c;
+}
+
+/* Team Avatars */
+.team-avatars {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.team-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #3182ce;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Cards */
+.chakra-card {
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    transition: box-shadow 0.2s;
+}
+
+.chakra-card:hover {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 5px 8px 0px rgba(0,0,0,0.14), 0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+
+/* Features */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.feature-card {
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.feature-card p {
+    color: #4a5568;
+    line-height: 1.75;
+}
+
+/* Pricing */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.pricing-card {
+    text-align: center;
+    position: relative;
+}
+
+.pricing-card.featured {
+    border: 2px solid #319795;
+    transform: scale(1.05);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #319795;
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.price {
+    margin: 24px 0;
+}
+
+.price-amount {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #319795;
+}
+
+.price-period {
+    font-size: 1rem;
+    color: #4a5568;
+}
+
+.pricing-features {
+    list-style: none;
+    text-align: left;
+    margin: 24px 0;
+}
+
+.pricing-features li {
+    padding: 8px 0;
+    color: #4a5568;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-card button {
+    width: 100%;
+    margin-top: 16px;
+}
+
+/* Testimonials */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #4a5568;
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.author-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #319795;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.author-name {
+    font-weight: 500;
+    color: #1a202c;
+}
+
+.author-role {
+    font-size: 0.875rem;
+    color: #4a5568;
+}
+
+/* Components Showcase */
+.components-showcase {
+    background: #f7fafc;
+}
+
+.components-intro {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 32px;
+    font-size: 14px;
+}
+
+.components-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.component-card {
+    min-height: 200px;
+}
+
+/* Chakra Form */
+.chakra-form-demo input, .chakra-form-demo select {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.chakra-input, .chakra-select {
+    padding: 8px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.chakra-input:focus, .chakra-select:focus {
+    outline: none;
+    border-color: #319795;
+    box-shadow: 0 0 0 1px #319795;
+}
+
+.chakra-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* Chakra Alert */
+.chakra-alert {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.chakra-alert-info {
+    background: #ebf8ff;
+    color: #2c5282;
+    border-left: 4px solid #3182ce;
+}
+
+.chakra-alert-success {
+    background: #f0fff4;
+    color: #22543d;
+    border-left: 4px solid #38a169;
+}
+
+/* Chakra Stat */
+.chakra-stat {
+    margin-top: 16px;
+}
+
+/* Ensure chakra-stat cards inherit card styling */
+.chakra-stat.dashboard-stat-card {
+    margin-top: 0;
+}
+
+.chakra-stat-label {
+    font-size: 14px;
+    color: #718096;
+    margin-bottom: 4px;
+}
+
+.chakra-stat-value {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 4px;
+}
+
+.chakra-stat-help {
+    font-size: 12px;
+    color: #48bb78;
+}
+
+/* Chakra Divider */
+.chakra-divider-demo {
+    margin-top: 16px;
+}
+
+.chakra-divider {
+    width: 100%;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 16px 0;
+}
+
+/* Chakra Toast */
+.chakra-toast {
+    display: flex;
+    gap: 12px;
+    background: #f0fff4;
+    border: 1px solid #9ae6b4;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-top: 16px;
+}
+
+.chakra-toast-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #38a169;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.chakra-toast-title {
+    font-weight: 600;
+    color: #1a202c;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.chakra-toast-description {
+    font-size: 12px;
+    color: #4a5568;
+}
+
+/* Chakra Badge */
+.chakra-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.chakra-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #edf2f7;
+    color: #2d3748;
+}
+
+.chakra-badge-success {
+    background: #c6f6d5;
+    color: #22543d;
+}
+
+.chakra-badge-warning {
+    background: #feebc8;
+    color: #c05621;
+}
+
+.chakra-badge-error {
+    background: #fed7d7;
+    color: #c53030;
+}
+
+/* Footer */
+.chakra-footer {
+    background: #f7fafc;
+    padding: 48px 0 24px;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 48px;
+    margin-bottom: 32px;
+}
+
+.footer-brand {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #319795;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.footer-column h4 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #1a202c;
+}
+
+.footer-column a {
+    display: block;
+    color: #4a5568;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 0.875rem;
+    transition: color 0.2s;
+}
+
+.footer-column a:hover {
+    color: #319795;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    padding-top: 24px;
+    text-align: center;
+    color: #4a5568;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .chakra-h1 {
+        font-size: 2rem;
+    }
+    
+    .chakra-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .chakra-nav-links {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+    
+    .dashboard-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .component-card-wide {
+        grid-column: span 1;
+    }
+}
+
+/* Demo Sections */
+.demo-section {
+    padding: 80px 0;
+}
+
+.demo-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.demo-description {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-top: 16px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.demo-content {
+    margin-top: 32px;
+}
+
+/* Chakra Dashboard */
+.chakra-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.dashboard-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.dashboard-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.dashboard-icon-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.dashboard-icon-btn:hover {
+    background: #f7fafc;
+    border-color: #319795;
+}
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.dashboard-stat-card {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: #4a5568;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-value {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #1a202c;
+}
+
+.stat-change {
+    font-size: 0.75rem;
+    color: #4a5568;
+    margin-top: 4px;
+}
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+.dashboard-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.dashboard-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.dashboard-section {
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.section-link {
+    font-size: 0.875rem;
+    color: #319795;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.section-link:hover {
+    color: #2c7a7b;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project-item {
+    padding: 16px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+}
+
+.project-item:last-child {
+    margin-bottom: 0;
+}
+
+.project-info {
+    margin-bottom: 12px;
+}
+
+.project-name {
+    font-weight: 500;
+    color: #1a202c;
+    margin-bottom: 4px;
+}
+
+.project-meta {
+    font-size: 0.875rem;
+    color: #4a5568;
+}
+
+.project-stats {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.project-progress {
+    flex: 1;
+}
+
+.progress-label {
+    font-size: 0.75rem;
+    color: #4a5568;
+    margin-bottom: 4px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s;
+}
+
+.activity-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.activity-item {
+    display: flex;
+    gap: 12px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.activity-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e6fffa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+    color: #319795;
+}
+
+.activity-content {
+    flex: 1;
+}
+
+.activity-text {
+    font-size: 0.875rem;
+    color: #1a202c;
+    margin-bottom: 4px;
+    line-height: 1.4;
+}
+
+.activity-text strong {
+    font-weight: 600;
+}
+
+.activity-time {
+    font-size: 0.75rem;
+    color: #4a5568;
+}
+
+.quick-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.quick-stat-item {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.quick-stat-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.quick-stat-label {
+    font-size: 0.75rem;
+    color: #4a5568;
+    margin-bottom: 6px;
+}
+
+.quick-stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a202c;
+}
+
+.team-avatars {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.team-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #319795;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Chakra Tabs */
+.chakra-tabs {
+    display: flex;
+    gap: 8px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.chakra-tab {
+    background: none;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4a5568;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: all 0.2s;
+}
+
+.chakra-tab:hover {
+    color: #1a202c;
+}
+
+.chakra-tab-active {
+    color: #319795;
+    border-bottom-color: #319795;
+}
+
+.tab-content {
+    margin-top: 16px;
+}
+
+.tab-panel {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Chakra Switches */
+.chakra-switches-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.chakra-switch-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+}
+
+.chakra-switch-label span:first-child {
+    font-size: 0.875rem;
+    color: #1a202c;
+}
+
+.chakra-switch-wrapper {
+    position: relative;
+    width: 44px;
+    height: 24px;
+    display: inline-block;
+}
+
+.chakra-switch {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    border-radius: 12px;
+    background: #e2e8f0;
+    cursor: pointer;
+    transition: background 0.2s;
+    outline: none;
+    z-index: 1;
+    opacity: 0;
+}
+
+.chakra-switch-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: #e2e8f0;
+    transition: background 0.2s;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.chakra-switch-slider::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 2px;
+    top: 2px;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 1;
+    transform: translateX(0);
+}
+
+.chakra-switch:checked + .chakra-switch-slider {
+    background: #319795;
+}
+
+.chakra-switch:checked + .chakra-switch-slider::before {
+    transform: translateX(20px);
+}
+
+/* Chakra Accordion */
+.chakra-accordion {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.chakra-accordion-item {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.chakra-accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    cursor: pointer;
+    color: #1a202c;
+    font-size: 0.875rem;
+}
+
+.chakra-accordion-icon {
+    color: #4a5568;
+    transition: transform 0.2s;
+    font-size: 0.75rem;
+}
+
+.chakra-accordion-item.active .chakra-accordion-icon {
+    transform: rotate(180deg);
+}
+
+.chakra-accordion-content {
+    padding-bottom: 16px;
+    color: #4a5568;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    display: none;
+}
+
+.chakra-accordion-item.active .chakra-accordion-content {
+    display: block;
+}
+
+/* Chakra Input */
+.chakra-input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    background: #ffffff;
+    color: #1a202c;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.chakra-input:focus {
+    outline: none;
+    border-color: #319795;
+    box-shadow: 0 0 0 3px rgba(49, 151, 149, 0.1);
+}
+
+.chakra-input::placeholder {
+    color: #a0aec0;
+}
+
+/* Tooltip styles */
+[data-tooltip] {
+    position: relative;
+    cursor: help;
+}
+
+[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 12px;
+    background: #1a202c;
+    color: #ffffff;
+    font-size: 0.75rem;
+    border-radius: 6px;
+    white-space: nowrap;
+    z-index: 1000;
+    margin-bottom: 8px;
+    pointer-events: none;
+    opacity: 0;
+    animation: tooltipFadeIn 0.2s ease forwards;
+}
+
+[data-tooltip]:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: #1a202c;
+    z-index: 1000;
+    margin-bottom: 3px;
+    opacity: 0;
+    animation: tooltipFadeIn 0.2s ease forwards;
+}
+
+@keyframes tooltipFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.dashboard-icon-btn:hover::after {
+    bottom: calc(100% + 8px);
+}
+
+.dashboard-icon-btn:hover::before {
+    bottom: calc(100% + 3px);
+}
+
+/* Chakra Table */
+.chakra-table {
+    overflow-x: auto;
+    margin-top: 16px;
+}
+
+.chakra-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.chakra-table th {
+    text-align: left;
+    padding: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #4a5568;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.chakra-table td {
+    padding: 12px;
+    font-size: 0.875rem;
+    border-bottom: 1px solid #f7fafc;
+    color: #1a202c;
+}
+
+.chakra-table tbody tr {
+    transition: all 0.2s;
+}
+
+.chakra-table tbody tr:hover {
+    background: #f7fafc;
+}
+
+.component-card-wide {
+    grid-column: span 2;
+}

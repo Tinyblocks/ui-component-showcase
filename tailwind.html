@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Component Showcase</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2306B6D4'/%3E%3Ctext x='50' y='70' font-family='system-ui, -apple-system, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+    <link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2306B6D4'/%3E%3Ctext x='50' y='70' font-family='system-ui, -apple-system, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles/tailwind.css">
+</head>
+<body>
+    <nav class="tailwind-nav">
+        <div class="tailwind-container">
+            <div class="tailwind-nav-brand">Tailwind CSS</div>
+            <div class="tailwind-nav-links">
+                <a href="#dashboard-demo">Dashboard</a>
+                <a href="#pricing-demo">Pricing</a>
+                <a href="#testimonials-demo">Testimonials</a>
+                <a href="#components-demo">Components</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero tailwind-section">
+        <div class="tailwind-container">
+            <h1 class="tailwind-h1">Tailwind CSS</h1>
+            <p class="tailwind-subtitle">A utility-first CSS framework for rapidly building custom designs</p>
+            <p class="tailwind-description">Explore Tailwind CSS through real-world examples and demos</p>
+            <div class="hero-cta" style="margin-top: 32px;">
+                <a href="https://tailwindcss.com/" target="_blank" class="tailwind-btn-primary tailwind-btn-large">Visit Tailwind CSS →</a>
+            </div>
+            <a href="#dashboard-demo" class="scroll-down-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="dashboard-demo" class="demo-section tailwind-section">
+        <div class="tailwind-container">
+            <div class="demo-header">
+                <h2 class="tailwind-h2">Dashboard Example</h2>
+                <p class="demo-description">A complete dashboard built with Tailwind CSS utility classes including cards, progress bars, badges, and activity feeds</p>
+            </div>
+            <div class="demo-content">
+                <div class="tailwind-dashboard">
+                    <div class="dashboard-header">
+                        <div class="dashboard-title">Project Dashboard</div>
+                        <div class="dashboard-actions">
+                            <button class="dashboard-icon-btn" data-tooltip="Settings">⚙️</button>
+                            <button class="dashboard-icon-btn" data-tooltip="Notifications (3 new)">🔔</button>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stat-card">
+                            <div class="stat-label">Active Projects</div>
+                            <div class="stat-value">12</div>
+                            <div class="stat-change">+3 this month</div>
+                        </div>
+                        <div class="dashboard-stat-card">
+                            <div class="stat-label">Tasks Completed</div>
+                            <div class="stat-value">89</div>
+                            <div class="stat-change">+12 today</div>
+                        </div>
+                        <div class="dashboard-stat-card">
+                            <div class="stat-label">Team Members</div>
+                            <div class="stat-value">24</div>
+                            <div class="stat-change">8 online now</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="dashboard-main">
+                            <div class="dashboard-section tailwind-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1rem; font-weight: 600; margin: 0; color: #111827;">Recent Projects</h3>
+                                    <button class="section-link">View All</button>
+                                </div>
+                                <div class="project-list">
+                                    <div class="project-item tailwind-card">
+                                        <div class="project-info">
+                                            <div class="project-name">Website Redesign</div>
+                                            <div class="project-meta">Design Team • Due Dec 15</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">75%</div>
+                                                <div class="progress-bar"><div class="progress-fill" style="width: 75%; background: #06b6d4;"></div></div>
+                                            </div>
+                                            <span class="tailwind-badge tailwind-badge-success">Active</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-item tailwind-card">
+                                        <div class="project-info">
+                                            <div class="project-name">Mobile App Launch</div>
+                                            <div class="project-meta">Dev Team • Due Jan 10</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">45%</div>
+                                                <div class="progress-bar"><div class="progress-fill" style="width: 45%; background: #06b6d4;"></div></div>
+                                            </div>
+                                            <span class="tailwind-badge tailwind-badge-warning">In Progress</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-item tailwind-card">
+                                        <div class="project-info">
+                                            <div class="project-name">Marketing Campaign</div>
+                                            <div class="project-meta">Marketing • Due Dec 20</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">90%</div>
+                                                <div class="progress-bar"><div class="progress-fill" style="width: 90%; background: #06b6d4;"></div></div>
+                                            </div>
+                                            <span class="tailwind-badge tailwind-badge-success">Almost Done</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-section tailwind-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1rem; font-weight: 600; margin: 0; color: #111827;">Activity Feed</h3>
+                                </div>
+                                <div class="activity-feed">
+                                    <div class="activity-item">
+                                        <div class="activity-icon">✓</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text"><strong>Sarah Martinez</strong> completed task "Design Review"</div>
+                                            <div class="activity-time">2 hours ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="activity-icon">➕</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text"><strong>James Davis</strong> created new project "Mobile App Launch"</div>
+                                            <div class="activity-time">5 hours ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="activity-icon">💬</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text"><strong>Emily Wilson</strong> commented on "Website Redesign"</div>
+                                            <div class="activity-time">1 day ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-sidebar">
+                            <div class="dashboard-section tailwind-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1rem; font-weight: 600; margin: 0; color: #111827;">Quick Stats</h3>
+                                </div>
+                                <div class="quick-stats">
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Tasks This Week</div>
+                                        <div class="quick-stat-value">47</div>
+                                    </div>
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Overdue</div>
+                                        <div class="quick-stat-value" style="color: #ef4444;">3</div>
+                                    </div>
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Upcoming Deadlines</div>
+                                        <div class="quick-stat-value">7</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-section tailwind-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1rem; font-weight: 600; margin: 0; color: #111827;">Team Members</h3>
+                                </div>
+                                <div class="team-avatars">
+                                    <div class="team-avatar" data-tooltip="Sarah Martinez - Designer">SM</div>
+                                    <div class="team-avatar" data-tooltip="James Davis - Developer">JD</div>
+                                    <div class="team-avatar" data-tooltip="Emily Wilson - PM">EW</div>
+                                    <div class="team-avatar" data-tooltip="21 more team members">+21</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing-demo" class="demo-section tailwind-section">
+        <div class="tailwind-container">
+            <div class="demo-header">
+                <h2 class="tailwind-h2">Pricing Example</h2>
+                <p class="demo-description">Pricing cards built with Tailwind CSS utility classes showcasing cards, buttons, and typography</p>
+            </div>
+            <div class="demo-content">
+                <div class="pricing-grid">
+                <div class="tailwind-card pricing-card">
+                    <h3 class="tailwind-h3">Starter</h3>
+                    <div class="price">
+                        <span class="price-amount">$29</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 5 team members</li>
+                        <li>Unlimited projects</li>
+                        <li>Basic automation</li>
+                        <li>Email support</li>
+                    </ul>
+                    <button class="tailwind-btn-secondary">Get Started</button>
+                </div>
+                <div class="tailwind-card pricing-card featured">
+                    <div class="featured-badge">Popular</div>
+                    <h3 class="tailwind-h3">Professional</h3>
+                    <div class="price">
+                        <span class="price-amount">$79</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 25 team members</li>
+                        <li>Advanced automation</li>
+                        <li>Priority support</li>
+                        <li>Analytics dashboard</li>
+                        <li>Custom workflows</li>
+                    </ul>
+                    <button class="tailwind-btn-primary">Get Started</button>
+                </div>
+                <div class="tailwind-card pricing-card">
+                    <h3 class="tailwind-h3">Enterprise</h3>
+                    <div class="price">
+                        <span class="price-amount">Custom</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Unlimited team members</li>
+                        <li>Advanced security</li>
+                        <li>Dedicated support</li>
+                        <li>Custom integrations</li>
+                        <li>SLA guarantee</li>
+                    </ul>
+                    <button class="tailwind-btn-secondary">Contact Sales</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials-demo" class="demo-section tailwind-section">
+        <div class="tailwind-container">
+            <div class="demo-header">
+                <h2 class="tailwind-h2">Testimonials Example</h2>
+                <p class="demo-description">Testimonial cards showcasing Tailwind CSS utility classes with avatar and typography</p>
+            </div>
+            <div class="demo-content">
+                <div class="testimonials-grid">
+                <div class="tailwind-card testimonial-card">
+                    <p class="testimonial-text">"TaskFlow Pro transformed how our remote team collaborates. The automation features save us hours every week."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div>
+                            <div class="author-name">Sarah Martinez</div>
+                            <div class="author-role">CEO, TechStart Inc.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tailwind-card testimonial-card">
+                    <p class="testimonial-text">"The analytics dashboard gives us insights we never had before. It's become essential to our planning process."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div>
+                            <div class="author-name">James Davis</div>
+                            <div class="author-role">Project Manager, DesignCo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tailwind-card testimonial-card">
+                    <p class="testimonial-text">"Custom workflows are a game-changer. We've built processes that perfectly match our team's needs."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EW</div>
+                        <div>
+                            <div class="author-name">Emily Wilson</div>
+                            <div class="author-role">CTO, Innovation Labs</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="components-demo" class="demo-section tailwind-section">
+        <div class="tailwind-container">
+            <div class="demo-header">
+                <h2 class="tailwind-h2">Individual Components</h2>
+                <p class="demo-description">Explore Tailwind CSS utility classes in action</p>
+            </div>
+            <div class="components-grid">
+                <!-- Tabs Component -->
+                <div class="tailwind-card component-card">
+                    <h3 class="tailwind-h3">Tabs</h3>
+                    <div class="tailwind-tabs">
+                        <button class="tailwind-tab tailwind-tab-active" data-tab="dashboard">Dashboard</button>
+                        <button class="tailwind-tab" data-tab="projects">Projects</button>
+                        <button class="tailwind-tab" data-tab="settings">Settings</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-panel active" data-panel="dashboard">
+                            <p style="margin-top: 16px; color: #6b7280;">View your dashboard metrics and analytics here.</p>
+                        </div>
+                        <div class="tab-panel" data-panel="projects" style="display: none;">
+                            <p style="margin-top: 16px; color: #6b7280;">Manage all your projects from this view.</p>
+                        </div>
+                        <div class="tab-panel" data-panel="settings" style="display: none;">
+                            <p style="margin-top: 16px; color: #6b7280;">Configure your account settings and preferences.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Switch/Toggle -->
+                <div class="tailwind-card component-card">
+                    <h3 class="tailwind-h3">Switch</h3>
+                    <div class="tailwind-switches-demo">
+                        <label class="tailwind-switch-label">
+                            <span>Enable notifications</span>
+                            <div class="tailwind-switch-wrapper">
+                                <input type="checkbox" class="tailwind-switch" checked>
+                                <span class="tailwind-switch-slider"></span>
+                            </div>
+                        </label>
+                        <label class="tailwind-switch-label">
+                            <span>Dark mode</span>
+                            <div class="tailwind-switch-wrapper">
+                                <input type="checkbox" class="tailwind-switch">
+                                <span class="tailwind-switch-slider"></span>
+                            </div>
+                        </label>
+                        <label class="tailwind-switch-label">
+                            <span>Auto-save</span>
+                            <div class="tailwind-switch-wrapper">
+                                <input type="checkbox" class="tailwind-switch" checked>
+                                <span class="tailwind-switch-slider"></span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Accordion -->
+                <div class="tailwind-card component-card">
+                    <h3 class="tailwind-h3">Accordion</h3>
+                    <div class="tailwind-accordion">
+                        <div class="tailwind-accordion-item">
+                            <div class="tailwind-accordion-header">
+                                <span>What is Tailwind CSS?</span>
+                                <span class="tailwind-accordion-icon">▼</span>
+                            </div>
+                            <div class="tailwind-accordion-content" style="display: block;">
+                                Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build custom designs.
+                            </div>
+                        </div>
+                        <div class="tailwind-accordion-item">
+                            <div class="tailwind-accordion-header">
+                                <span>How do I get started?</span>
+                                <span class="tailwind-accordion-icon">▶</span>
+                            </div>
+                            <div class="tailwind-accordion-content" style="display: none;">
+                                Install Tailwind CSS via npm and configure it in your build process to start using utility classes.
+                            </div>
+                        </div>
+                        <div class="tailwind-accordion-item">
+                            <div class="tailwind-accordion-header">
+                                <span>Is it free to use?</span>
+                                <span class="tailwind-accordion-icon">▶</span>
+                            </div>
+                            <div class="tailwind-accordion-content" style="display: none;">
+                                Yes! Tailwind CSS is open-source and free to use under the MIT license.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Input & Dropdown -->
+                <div class="tailwind-card component-card">
+                    <h3 class="tailwind-h3">Input & Dropdown</h3>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <input type="text" class="tailwind-input" placeholder="Enter text...">
+                        <select class="tailwind-input">
+                            <option value="">Select an option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Typography Utilities -->
+                <div class="tailwind-card component-card">
+                    <h3 class="tailwind-h3">Typography</h3>
+                    <div class="tailwind-typography-demo">
+                        <p class="text-xs text-gray-600">Extra small text</p>
+                        <p class="text-base text-gray-800">Base text</p>
+                        <p class="text-lg font-bold text-gray-900">Large bold</p>
+                        <p class="text-2xl font-extrabold text-cyan-600">2XL Extra Bold</p>
+                    </div>
+                </div>
+
+                <!-- Spacing Utilities -->
+                <div class="tailwind-card component-card">
+                    <h3 class="tailwind-h3">Spacing</h3>
+                    <div class="tailwind-spacing-demo">
+                        <div class="mb-2 p-2 bg-cyan-100 rounded">p-2 (padding)</div>
+                        <div class="mb-2 p-4 bg-cyan-200 rounded">p-4 (padding)</div>
+                        <div class="mb-2 p-6 bg-cyan-300 rounded">p-6 (padding)</div>
+                    </div>
+                </div>
+
+                <!-- Flexbox Grid -->
+                <div class="tailwind-card component-card">
+                    <h3 class="tailwind-h3">Flexbox & Grid</h3>
+                    <div class="tailwind-flex-demo">
+                        <div class="flex gap-2 mb-2">
+                            <div class="flex-1 bg-cyan-500 p-2 rounded text-white text-center">1</div>
+                            <div class="flex-1 bg-cyan-600 p-2 rounded text-white text-center">2</div>
+                            <div class="flex-1 bg-cyan-700 p-2 rounded text-white text-center">3</div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2">
+                            <div class="bg-cyan-400 p-2 rounded text-center text-white">A</div>
+                            <div class="bg-cyan-500 p-2 rounded text-center text-white">B</div>
+                            <div class="bg-cyan-600 p-2 rounded text-center text-white">C</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color Utilities -->
+                <div class="tailwind-card component-card">
+                    <h3 class="tailwind-h3">Colors</h3>
+                    <div class="tailwind-colors-demo">
+                        <div class="bg-cyan-500 text-white p-3 rounded mb-2">Cyan 500</div>
+                        <div class="bg-cyan-600 text-white p-3 rounded mb-2">Cyan 600</div>
+                        <div class="bg-cyan-700 text-white p-3 rounded">Cyan 700</div>
+                    </div>
+                </div>
+
+                <!-- Border & Shadow -->
+                <div class="tailwind-card component-card">
+                    <h3 class="tailwind-h3">Borders & Shadows</h3>
+                    <div class="tailwind-border-demo">
+                        <div class="border border-cyan-300 p-3 rounded mb-2">Border</div>
+                        <div class="border-2 border-cyan-500 p-3 rounded mb-2">Border-2</div>
+                        <div class="shadow-md p-3 rounded mb-2">Shadow MD</div>
+                        <div class="shadow-lg p-3 rounded">Shadow LG</div>
+                    </div>
+                </div>
+
+                <!-- Responsive Example -->
+                <div class="tailwind-card component-card component-card-wide">
+                    <h3 class="tailwind-h3">Responsive Design</h3>
+                    <div class="tailwind-responsive-demo">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div class="bg-cyan-100 p-4 rounded text-center">Col 1</div>
+                            <div class="bg-cyan-200 p-4 rounded text-center">Col 2</div>
+                            <div class="bg-cyan-300 p-4 rounded text-center">Col 3</div>
+                            <div class="bg-cyan-400 p-4 rounded text-center">Col 4</div>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-4">Resize browser to see responsive behavior</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="tailwind-footer">
+        <div class="tailwind-container">
+            <div class="footer-content">
+                <div class="footer-brand">Tailwind CSS</div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="https://tailwindcss.com/" target="_blank">Official Website</a>
+                        <a href="https://tailwindcss.com/docs" target="_blank">Documentation</a>
+                        <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank">GitHub</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Community</h4>
+                        <a href="https://tailwindcss.com/docs" target="_blank">Getting Started</a>
+                        <a href="https://twitter.com/tailwindcss" target="_blank">Twitter</a>
+                        <a href="https://github.com/tailwindlabs/tailwindcss/discussions" target="_blank">Discussions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tailwind CSS Component Showcase Demo</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/tailwind.js"></script>
+</body>
+</html>

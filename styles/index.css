@@ -1,0 +1,212 @@
+/* Custom Properties - Tropical Vibes Theme */
+:root {
+    --primary-teal: #0D9488;
+    --primary-teal-dark: #0F766E;
+    --primary-teal-light: #2DD4BF;
+    --bg-page: #F8F7FF;
+    --bg-white: #FFFFFF;
+    --bg-gray-light: #F9FAFB;
+    --bg-gray: #F3F4F6;
+    --text-dark: #1F2937;
+    --text-gray: #6B7280;
+    --text-light: #9CA3AF;
+    --border-gray: #E5E7EB;
+    --border-gray-dark: #D1D5DB;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-page);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 3rem 0;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.header-logo {
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    letter-spacing: -0.025em;
+}
+
+.hero-section .subtitle {
+    font-size: 1.5rem;
+    color: var(--text-gray);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.hero-section .description {
+    font-size: 1.125rem;
+    color: var(--text-gray);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Library Grid */
+.library-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+/* Library Card */
+.library-card {
+    background: var(--bg-white);
+    border: 1px solid var(--border-gray);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.library-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--border-gray-dark);
+}
+
+.library-card h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.01em;
+}
+
+.library-card .tagline {
+    color: var(--text-gray);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+.library-card .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--primary-teal);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-align: center;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.library-card .btn:hover {
+    background: var(--primary-teal-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
+}
+
+.library-card .btn:active {
+    transform: translateY(0);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid var(--border-gray);
+    margin-top: 2rem;
+}
+
+footer p {
+    color: var(--text-gray);
+    font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem 1rem;
+    }
+
+    .hero-section {
+        padding: 2rem 0;
+        margin-bottom: 3rem;
+    }
+
+    .header-logo {
+        width: 64px;
+        height: 64px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero-section .description {
+        font-size: 1rem;
+    }
+
+    .library-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .library-card {
+        padding: 1.5rem;
+    }
+
+    .library-card h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-section .subtitle {
+        font-size: 1.125rem;
+    }
+}

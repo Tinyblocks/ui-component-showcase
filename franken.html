@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franken UI Component Showcase</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%234F46E5'/%3E%3Ctext x='50' y='70' font-family='system-ui, -apple-system, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+    <link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%234F46E5'/%3E%3Ctext x='50' y='70' font-family='system-ui, -apple-system, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%234F46E5'/%3E%3Ctext x='50' y='70' font-family='system-ui, -apple-system, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles/franken.css">
+</head>
+<body>
+    <nav class="franken-nav">
+        <div class="franken-container">
+            <div class="franken-nav-brand">Franken UI</div>
+            <div class="franken-nav-links">
+                <a href="#dashboard-demo">Dashboard</a>
+                <a href="#pricing-demo">Pricing</a>
+                <a href="#testimonials-demo">Testimonials</a>
+                <a href="#components-demo">Components</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero franken-section">
+        <div class="franken-container">
+            <h1 class="franken-h1">Franken UI</h1>
+            <p class="franken-subtitle">Combined design elements for unique components</p>
+            <p class="franken-description">Explore Franken UI components through real-world examples and demos</p>
+            <div class="hero-cta" style="margin-top: 32px;">
+                <a href="https://franken-ui.dev/" target="_blank" class="franken-btn-primary franken-btn-large">Visit Franken UI →</a>
+            </div>
+            <a href="#dashboard-demo" class="scroll-down-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="dashboard-demo" class="demo-section franken-section">
+        <div class="franken-container">
+            <div class="demo-header">
+                <h2 class="franken-h2">Dashboard Example</h2>
+                <p class="demo-description">A complete dashboard built with Franken UI components including cards, progress bars, badges, and activity feeds</p>
+            </div>
+            <div class="demo-content">
+                <div class="franken-dashboard">
+                    <div class="dashboard-header">
+                        <div class="dashboard-title">Project Dashboard</div>
+                        <div class="dashboard-actions">
+                            <button class="dashboard-icon-btn" data-tooltip="Settings">⚙️</button>
+                            <button class="dashboard-icon-btn" data-tooltip="Notifications (3 new)">🔔</button>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stat-card franken-card">
+                            <div class="stat-label">Active Projects</div>
+                            <div class="stat-value">12</div>
+                            <div class="stat-change">+3 this month</div>
+                        </div>
+                        <div class="dashboard-stat-card franken-card">
+                            <div class="stat-label">Tasks Completed</div>
+                            <div class="stat-value">89</div>
+                            <div class="stat-change">+12 today</div>
+                        </div>
+                        <div class="dashboard-stat-card franken-card">
+                            <div class="stat-label">Team Members</div>
+                            <div class="stat-value">24</div>
+                            <div class="stat-change">8 online now</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="dashboard-main">
+                            <div class="dashboard-section franken-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1.125rem; font-weight: 600; margin: 0;">Recent Projects</h3>
+                                    <button class="section-link">View All</button>
+                                </div>
+                                <div class="project-list">
+                                    <div class="project-item franken-card">
+                                        <div class="project-info">
+                                            <div class="project-name">Website Redesign</div>
+                                            <div class="project-meta">Design Team • Due Dec 15</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">75%</div>
+                                                <div class="franken-progress"><div class="franken-progress-bar" style="width: 75%"></div></div>
+                                            </div>
+                                            <span class="franken-badge franken-badge-success">Active</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-item franken-card">
+                                        <div class="project-info">
+                                            <div class="project-name">Mobile App Launch</div>
+                                            <div class="project-meta">Dev Team • Due Jan 10</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">45%</div>
+                                                <div class="franken-progress"><div class="franken-progress-bar" style="width: 45%"></div></div>
+                                            </div>
+                                            <span class="franken-badge franken-badge-warning">In Progress</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-item franken-card">
+                                        <div class="project-info">
+                                            <div class="project-name">Marketing Campaign</div>
+                                            <div class="project-meta">Marketing • Due Dec 20</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">90%</div>
+                                                <div class="franken-progress"><div class="franken-progress-bar" style="width: 90%"></div></div>
+                                            </div>
+                                            <span class="franken-badge franken-badge-success">Almost Done</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-section franken-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1.125rem; font-weight: 600; margin: 0;">Activity Feed</h3>
+                                </div>
+                                <div class="activity-feed">
+                                    <div class="activity-item">
+                                        <div class="activity-icon">✓</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text"><strong>Sarah Martinez</strong> completed task "Design Review"</div>
+                                            <div class="activity-time">2 hours ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="activity-icon">➕</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text"><strong>James Davis</strong> created new project "Mobile App Launch"</div>
+                                            <div class="activity-time">5 hours ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="activity-icon">💬</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text"><strong>Emily Wilson</strong> commented on "Website Redesign"</div>
+                                            <div class="activity-time">1 day ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-sidebar">
+                            <div class="dashboard-section franken-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1.125rem; font-weight: 600; margin: 0;">Quick Stats</h3>
+                                </div>
+                                <div class="quick-stats">
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Tasks This Week</div>
+                                        <div class="quick-stat-value">47</div>
+                                    </div>
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Overdue</div>
+                                        <div class="quick-stat-value" style="color: #dc2626;">3</div>
+                                    </div>
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Upcoming Deadlines</div>
+                                        <div class="quick-stat-value">7</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-section franken-card">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1.125rem; font-weight: 600; margin: 0;">Team Members</h3>
+                                </div>
+                                <div class="team-avatars">
+                                    <div class="team-avatar" data-tooltip="Sarah Martinez - Designer">SM</div>
+                                    <div class="team-avatar" data-tooltip="James Davis - Developer">JD</div>
+                                    <div class="team-avatar" data-tooltip="Emily Wilson - PM">EW</div>
+                                    <div class="team-avatar" data-tooltip="21 more team members">+21</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing-demo" class="demo-section franken-section">
+        <div class="franken-container">
+            <div class="demo-header">
+                <h2 class="franken-h2">Pricing Example</h2>
+                <p class="demo-description">Pricing cards built with Franken UI components showcasing cards, buttons, and typography</p>
+            </div>
+            <div class="demo-content">
+                <div class="pricing-grid">
+                <div class="franken-card pricing-card">
+                    <h3 class="franken-h3">Starter</h3>
+                    <div class="price">
+                        <span class="price-amount">$29</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 5 team members</li>
+                        <li>Unlimited projects</li>
+                        <li>Basic automation</li>
+                        <li>Email support</li>
+                    </ul>
+                    <button class="franken-btn-secondary">Get Started</button>
+                </div>
+                <div class="franken-card pricing-card featured">
+                    <div class="featured-badge">Popular</div>
+                    <h3 class="franken-h3">Professional</h3>
+                    <div class="price">
+                        <span class="price-amount">$79</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 25 team members</li>
+                        <li>Advanced automation</li>
+                        <li>Priority support</li>
+                        <li>Analytics dashboard</li>
+                        <li>Custom workflows</li>
+                    </ul>
+                    <button class="franken-btn-primary">Get Started</button>
+                </div>
+                <div class="franken-card pricing-card">
+                    <h3 class="franken-h3">Enterprise</h3>
+                    <div class="price">
+                        <span class="price-amount">Custom</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Unlimited team members</li>
+                        <li>Advanced security</li>
+                        <li>Dedicated support</li>
+                        <li>Custom integrations</li>
+                        <li>SLA guarantee</li>
+                    </ul>
+                    <button class="franken-btn-secondary">Contact Sales</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials-demo" class="demo-section franken-section">
+        <div class="franken-container">
+            <div class="demo-header">
+                <h2 class="franken-h2">Testimonials Example</h2>
+                <p class="demo-description">Testimonial cards showcasing Franken UI's card components with avatar and typography</p>
+            </div>
+            <div class="demo-content">
+                <div class="testimonials-grid">
+                <div class="franken-card testimonial-card">
+                    <p class="testimonial-text">"TaskFlow Pro transformed how our remote team collaborates. The automation features save us hours every week."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div>
+                            <div class="author-name">Sarah Martinez</div>
+                            <div class="author-role">CEO, TechStart Inc.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="franken-card testimonial-card">
+                    <p class="testimonial-text">"The analytics dashboard gives us insights we never had before. It's become essential to our planning process."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div>
+                            <div class="author-name">James Davis</div>
+                            <div class="author-role">Project Manager, DesignCo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="franken-card testimonial-card">
+                    <p class="testimonial-text">"Custom workflows are a game-changer. We've built processes that perfectly match our team's needs."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EW</div>
+                        <div>
+                            <div class="author-name">Emily Wilson</div>
+                            <div class="author-role">CTO, Innovation Labs</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="components-demo" class="demo-section franken-section">
+        <div class="franken-container">
+            <div class="demo-header">
+                <h2 class="franken-h2">Individual Components</h2>
+                <p class="demo-description">Explore Franken UI's core components in isolation</p>
+            </div>
+            <div class="components-grid">
+                <div class="franken-card component-card">
+                    <h3 class="franken-h3">Tabs</h3>
+                    <div class="franken-tabs">
+                        <button class="franken-tab franken-tab-active" data-tab="dashboard">Dashboard</button>
+                        <button class="franken-tab" data-tab="projects">Projects</button>
+                        <button class="franken-tab" data-tab="settings">Settings</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-panel active" data-panel="dashboard">
+                            <p style="margin-top: 16px; color: #6b7280;">View your dashboard metrics and analytics here.</p>
+                        </div>
+                        <div class="tab-panel" data-panel="projects" style="display: none;">
+                            <p style="margin-top: 16px; color: #6b7280;">Manage all your projects from this view.</p>
+                        </div>
+                        <div class="tab-panel" data-panel="settings" style="display: none;">
+                            <p style="margin-top: 16px; color: #6b7280;">Configure your account settings and preferences.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="franken-card component-card">
+                    <h3 class="franken-h3">Badges</h3>
+                    <div class="franken-badges">
+                        <span class="franken-badge franken-badge-primary">New</span>
+                        <span class="franken-badge franken-badge-success">Active</span>
+                        <span class="franken-badge franken-badge-warning">Pending</span>
+                    </div>
+                </div>
+
+                <div class="franken-card component-card">
+                    <h3 class="franken-h3">Alert</h3>
+                    <div class="franken-alert franken-alert-info">
+                        <div class="franken-alert-icon">ℹ️</div>
+                        <div class="franken-alert-content">System notification</div>
+                    </div>
+                </div>
+
+                <div class="franken-card component-card">
+                    <h3 class="franken-h3">Toggle Switches</h3>
+                    <div class="franken-switches-demo">
+                        <label class="franken-switch-label">
+                            <span>Enable notifications</span>
+                            <div class="franken-switch-wrapper">
+                                <input type="checkbox" class="franken-switch" checked>
+                                <span class="franken-switch-slider"></span>
+                            </div>
+                        </label>
+                        <label class="franken-switch-label">
+                            <span>Dark mode</span>
+                            <div class="franken-switch-wrapper">
+                                <input type="checkbox" class="franken-switch">
+                                <span class="franken-switch-slider"></span>
+                            </div>
+                        </label>
+                        <label class="franken-switch-label">
+                            <span>Auto-save</span>
+                            <div class="franken-switch-wrapper">
+                                <input type="checkbox" class="franken-switch" checked>
+                                <span class="franken-switch-slider"></span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="franken-card component-card">
+                    <h3 class="franken-h3">Toast</h3>
+                    <div class="franken-toast">
+                        <div class="franken-toast-icon">✓</div>
+                        <div class="franken-toast-content">Action completed successfully</div>
+                    </div>
+                </div>
+
+                <div class="franken-card component-card">
+                    <h3 class="franken-h3">Accordion</h3>
+                    <div class="franken-accordion">
+                        <div class="franken-accordion-item">
+                            <div class="franken-accordion-header">
+                                <span>What is Franken UI?</span>
+                                <span class="franken-accordion-icon">▼</span>
+                            </div>
+                            <div class="franken-accordion-content" style="display: block;">
+                                Franken UI combines design elements from various sources to create unique, versatile components.
+                            </div>
+                        </div>
+                        <div class="franken-accordion-item">
+                            <div class="franken-accordion-header">
+                                <span>How do I get started?</span>
+                                <span class="franken-accordion-icon">▶</span>
+                            </div>
+                            <div class="franken-accordion-content" style="display: none;">
+                                Check the Franken UI documentation for installation instructions and setup guides.
+                            </div>
+                        </div>
+                        <div class="franken-accordion-item">
+                            <div class="franken-accordion-header">
+                                <span>Is it free to use?</span>
+                                <span class="franken-accordion-icon">▶</span>
+                            </div>
+                            <div class="franken-accordion-content" style="display: none;">
+                                Yes! Franken UI is free and open-source, released under the MIT license.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="franken-card component-card">
+                    <h3 class="franken-h3">Buttons</h3>
+                    <div class="franken-buttons-demo">
+                        <button class="franken-btn-primary">Primary</button>
+                        <button class="franken-btn-secondary">Secondary</button>
+                    </div>
+                </div>
+
+                <!-- Input & Dropdown -->
+                <div class="franken-card component-card">
+                    <h3 class="franken-h3">Input & Dropdown</h3>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <input type="text" class="franken-input" placeholder="Enter text...">
+                        <select class="franken-input">
+                            <option value="">Select an option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="franken-card component-card component-card-wide">
+                    <h3 class="franken-h3">Data Table</h3>
+                    <div class="franken-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Project</th>
+                                    <th>Status</th>
+                                    <th>Progress</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Website Redesign</td>
+                                    <td><span class="franken-badge franken-badge-success">Active</span></td>
+                                    <td><div class="franken-progress"><div class="franken-progress-bar" style="width: 75%"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile App</td>
+                                    <td><span class="franken-badge franken-badge-warning">Pending</span></td>
+                                    <td><div class="franken-progress"><div class="franken-progress-bar" style="width: 45%"></div></div></td>
+                                </tr>
+                                <tr>
+                                    <td>Marketing Campaign</td>
+                                    <td><span class="franken-badge franken-badge-success">Active</span></td>
+                                    <td><div class="franken-progress"><div class="franken-progress-bar" style="width: 90%"></div></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="franken-footer">
+        <div class="franken-container">
+            <div class="footer-content">
+                <div class="footer-brand">Franken UI</div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="https://franken-ui.dev/" target="_blank">Official Website</a>
+                        <a href="https://franken-ui.dev/docs" target="_blank">Documentation</a>
+                        <a href="https://github.com/franken-ui/franken-ui" target="_blank">GitHub</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Community</h4>
+                        <a href="#" target="_blank">Discord</a>
+                        <a href="#" target="_blank">Twitter</a>
+                        <a href="#" target="_blank">Discussions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Franken UI Component Showcase Demo</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/franken.js"></script>
+</body>
+</html>
+

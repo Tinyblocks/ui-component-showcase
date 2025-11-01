@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulma Component Showcase</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2300D1B2'/%3E%3Ctext x='50' y='70' font-family='system-ui, -apple-system, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+    <link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2300D1B2'/%3E%3Ctext x='50' y='70' font-family='system-ui, -apple-system, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles/bulma.css">
+</head>
+<body>
+    <nav class="bulma-nav">
+        <div class="bulma-container">
+            <div class="bulma-nav-brand">Bulma</div>
+            <div class="bulma-nav-links">
+                <a href="#dashboard-demo">Dashboard</a>
+                <a href="#pricing-demo">Pricing</a>
+                <a href="#testimonials-demo">Testimonials</a>
+                <a href="#components-demo">Components</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero bulma-section">
+        <div class="bulma-container">
+            <h1 class="bulma-h1">Bulma</h1>
+            <p class="bulma-subtitle">Free, open source CSS framework based on Flexbox</p>
+            <p class="bulma-description">Explore Bulma components through real-world examples and demos</p>
+            <div class="hero-cta" style="margin-top: 32px;">
+                <a href="https://bulma.io/" target="_blank" class="bulma-btn-contained bulma-btn-large">Visit Bulma →</a>
+            </div>
+            <a href="#dashboard-demo" class="scroll-down-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="dashboard-demo" class="demo-section bulma-section">
+        <div class="bulma-container">
+            <div class="demo-header">
+                <h2 class="bulma-h2">Dashboard Example</h2>
+                <p class="demo-description">A complete dashboard built with Bulma components including cards, progress bars, badges, and activity feeds</p>
+            </div>
+            <div class="demo-content">
+                <div class="bulma-dashboard">
+                    <div class="dashboard-header">
+                        <div class="dashboard-title">Project Dashboard</div>
+                            <div class="dashboard-actions">
+                            <button class="dashboard-icon-btn" data-tooltip="Settings">⚙️</button>
+                            <button class="dashboard-icon-btn" data-tooltip="Notifications (3 new)">🔔</button>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="dashboard-stat-card bulma-box">
+                            <div class="stat-label">Active Projects</div>
+                            <div class="stat-value">12</div>
+                            <div class="bulma-tags" style="margin-top: 8px;">
+                                <span class="bulma-tag bulma-tag-primary">New</span>
+                            </div>
+                        </div>
+                        <div class="dashboard-stat-card bulma-box">
+                            <div class="stat-label">Tasks Completed</div>
+                            <div class="stat-value">89</div>
+                            <div class="bulma-tags" style="margin-top: 8px;">
+                                <span class="bulma-tag bulma-tag-success">+12</span>
+                            </div>
+                        </div>
+                        <div class="dashboard-stat-card bulma-box">
+                            <div class="stat-label">Team Members</div>
+                            <div class="stat-value">24</div>
+                            <div class="stat-change">8 online now</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="dashboard-main">
+                            <div class="dashboard-section bulma-box">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1.125rem; font-weight: 600; margin: 0;">Recent Projects</h3>
+                                    <button class="section-link">View All</button>
+                                </div>
+                                <div class="project-list">
+                                    <div class="project-item bulma-box">
+                                        <div class="project-info">
+                                            <div class="project-name">Website Redesign</div>
+                                            <div class="project-meta">Design Team • Due Dec 15</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">75%</div>
+                                                <progress class="bulma-progress" value="75" max="100">75%</progress>
+                                            </div>
+                                            <span class="bulma-tag bulma-tag-success">Active</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-item bulma-box">
+                                        <div class="project-info">
+                                            <div class="project-name">Mobile App Launch</div>
+                                            <div class="project-meta">Dev Team • Due Jan 10</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">45%</div>
+                                                <progress class="bulma-progress bulma-progress-warning" value="45" max="100">45%</progress>
+                                            </div>
+                                            <span class="bulma-tag bulma-tag-warning">In Progress</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-item bulma-box">
+                                        <div class="project-info">
+                                            <div class="project-name">Marketing Campaign</div>
+                                            <div class="project-meta">Marketing • Due Dec 20</div>
+                                        </div>
+                                        <div class="project-stats">
+                                            <div class="project-progress">
+                                                <div class="progress-label">90%</div>
+                                                <progress class="bulma-progress bulma-progress-success" value="90" max="100">90%</progress>
+                                            </div>
+                                            <span class="bulma-tag bulma-tag-success">Almost Done</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-section bulma-box">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1.125rem; font-weight: 600; margin: 0;">Activity Feed</h3>
+                                </div>
+                                <div class="activity-feed">
+                                    <div class="activity-item">
+                                        <div class="activity-icon">✓</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text"><strong>Sarah Martinez</strong> completed task "Design Review"</div>
+                                            <div class="activity-time">2 hours ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="activity-icon">➕</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text"><strong>James Davis</strong> created new project "Mobile App Launch"</div>
+                                            <div class="activity-time">5 hours ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="activity-icon">💬</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text"><strong>Emily Wilson</strong> commented on "Website Redesign"</div>
+                                            <div class="activity-time">1 day ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-sidebar">
+                            <div class="dashboard-section bulma-box">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1.125rem; font-weight: 600; margin: 0;">Quick Stats</h3>
+                                </div>
+                                <div class="quick-stats">
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Tasks This Week</div>
+                                        <div class="quick-stat-value">47</div>
+                                    </div>
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Overdue</div>
+                                        <div class="quick-stat-value" style="color: #ff3860;">3</div>
+                                    </div>
+                                    <div class="quick-stat-item">
+                                        <div class="quick-stat-label">Upcoming Deadlines</div>
+                                        <div class="quick-stat-value">7</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-section bulma-box">
+                                <div class="section-header">
+                                    <h3 style="font-size: 1.125rem; font-weight: 600; margin: 0;">Team Members</h3>
+                                </div>
+                                <div class="team-avatars">
+                                    <div class="team-avatar" data-tooltip="Sarah Martinez">SM</div>
+                                    <div class="team-avatar" data-tooltip="James Davis">JD</div>
+                                    <div class="team-avatar" data-tooltip="Emily Wilson">EW</div>
+                                    <div class="team-avatar" data-tooltip="21 more members">+21</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing-demo" class="demo-section bulma-section">
+        <div class="bulma-container">
+            <div class="demo-header">
+                <h2 class="bulma-h2">Pricing Example</h2>
+                <p class="demo-description">Bulma pricing cards with clean, modern design</p>
+            </div>
+            <div class="demo-content">
+                <div class="pricing-grid">
+                <div class="bulma-card pricing-card">
+                    <h3 class="bulma-h3">Starter</h3>
+                    <div class="price">
+                        <span class="price-amount">$29</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 5 team members</li>
+                        <li>Unlimited projects</li>
+                        <li>Basic automation</li>
+                        <li>Email support</li>
+                    </ul>
+                    <button class="bulma-btn-outlined">Get Started</button>
+                </div>
+                <div class="bulma-card pricing-card featured">
+                    <div class="featured-badge">Popular</div>
+                    <h3 class="bulma-h3">Professional</h3>
+                    <div class="price">
+                        <span class="price-amount">$79</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 25 team members</li>
+                        <li>Advanced automation</li>
+                        <li>Priority support</li>
+                        <li>Analytics dashboard</li>
+                        <li>Custom workflows</li>
+                    </ul>
+                    <button class="bulma-btn-contained">Get Started</button>
+                </div>
+                <div class="bulma-card pricing-card">
+                    <h3 class="bulma-h3">Enterprise</h3>
+                    <div class="price">
+                        <span class="price-amount">Custom</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Unlimited team members</li>
+                        <li>Advanced security</li>
+                        <li>Dedicated support</li>
+                        <li>Custom integrations</li>
+                        <li>SLA guarantee</li>
+                    </ul>
+                    <button class="bulma-btn-outlined">Contact Sales</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials-demo" class="demo-section bulma-section">
+        <div class="bulma-container">
+            <div class="demo-header">
+                <h2 class="bulma-h2">Testimonials Example</h2>
+                <p class="demo-description">Bulma testimonial cards showcasing user feedback</p>
+            </div>
+            <div class="demo-content">
+            <div class="testimonials-grid">
+                <div class="bulma-card testimonial-card">
+                    <p class="testimonial-text">"TaskFlow Pro transformed how our remote team collaborates. The automation features save us hours every week."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div>
+                            <div class="author-name">Sarah Martinez</div>
+                            <div class="author-role">CEO, TechStart Inc.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bulma-card testimonial-card">
+                    <p class="testimonial-text">"The analytics dashboard gives us insights we never had before. It's become essential to our planning process."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div>
+                            <div class="author-name">James Davis</div>
+                            <div class="author-role">Project Manager, DesignCo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bulma-card testimonial-card">
+                    <p class="testimonial-text">"Custom workflows are a game-changer. We've built processes that perfectly match our team's needs."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EW</div>
+                        <div>
+                            <div class="author-name">Emily Wilson</div>
+                            <div class="author-role">CTO, Innovation Labs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="components-demo" class="demo-section bulma-section">
+        <div class="bulma-container">
+            <div class="demo-header">
+                <h2 class="bulma-h2">Component Showcase</h2>
+                <p class="demo-description">Explore Bulma's component library</p>
+            </div>
+            <div class="demo-content">
+                <div class="components-grid">
+                    <!-- Tabs -->
+                    <div class="bulma-card component-card">
+                        <h3 class="bulma-h3">Tabs</h3>
+                        <div class="bulma-tabs">
+                            <button class="bulma-tab bulma-tab-active" data-tab="dashboard">Dashboard</button>
+                            <button class="bulma-tab" data-tab="projects">Projects</button>
+                            <button class="bulma-tab" data-tab="settings">Settings</button>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-panel" data-panel="dashboard" style="display: block;">
+                                <p>View your dashboard metrics and analytics here.</p>
+                            </div>
+                            <div class="tab-panel" data-panel="projects" style="display: none;">
+                                <p>Manage your projects and tasks.</p>
+                            </div>
+                            <div class="tab-panel" data-panel="settings" style="display: none;">
+                                <p>Configure your account settings.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Switches -->
+                    <div class="bulma-card component-card">
+                        <h3 class="bulma-h3">Toggle Switches</h3>
+                        <div style="display: flex; flex-direction: column; gap: 16px;">
+                            <label style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                                <span>Enable notifications</span>
+                                <div class="bulma-switch-wrapper">
+                                    <input type="checkbox" class="bulma-switch" checked>
+                                    <span class="bulma-switch-slider"></span>
+                                </div>
+                            </label>
+                            <label style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                                <span>Dark mode</span>
+                                <div class="bulma-switch-wrapper">
+                                    <input type="checkbox" class="bulma-switch">
+                                    <span class="bulma-switch-slider"></span>
+                                </div>
+                            </label>
+                            <label style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                                <span>Auto-save</span>
+                                <div class="bulma-switch-wrapper">
+                                    <input type="checkbox" class="bulma-switch" checked>
+                                    <span class="bulma-switch-slider"></span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Accordion -->
+                    <div class="bulma-card component-card">
+                        <h3 class="bulma-h3">Accordion</h3>
+                        <div class="bulma-accordion">
+                            <div class="bulma-accordion-item">
+                                <button class="bulma-accordion-header bulma-accordion-active">
+                                    What is Bulma?
+                                    <span class="accordion-icon">▲</span>
+                                </button>
+                                <div class="bulma-accordion-panel" style="display: block;">
+                                    <p>Bulma is a free, open source CSS framework based on Flexbox and used by more than 200,000 developers.</p>
+                                </div>
+                            </div>
+                            <div class="bulma-accordion-item">
+                                <button class="bulma-accordion-header">
+                                    How do I get started?
+                                    <span class="accordion-icon">▼</span>
+                                </button>
+                                <div class="bulma-accordion-panel">
+                                    <p>You can include Bulma CSS in your HTML file, or install it via npm.</p>
+                                </div>
+                            </div>
+                            <div class="bulma-accordion-item">
+                                <button class="bulma-accordion-header">
+                                    Is it free to use?
+                                    <span class="accordion-icon">▼</span>
+                                </button>
+                                <div class="bulma-accordion-panel">
+                                    <p>Yes, Bulma is completely free and open-source under the MIT license.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Input & Dropdown -->
+                    <div class="bulma-card component-card">
+                        <h3 class="bulma-h3">Input & Dropdown</h3>
+                        <div style="display: flex; flex-direction: column; gap: 16px;">
+                            <input type="text" class="bulma-input" placeholder="Enter text...">
+                            <select class="bulma-select">
+                                <option>Select an option</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Badges -->
+                    <div class="bulma-card component-card">
+                        <h3 class="bulma-h3">Badges</h3>
+                        <div class="bulma-tags" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                            <span class="bulma-tag">Default</span>
+                            <span class="bulma-tag bulma-tag-primary">Primary</span>
+                            <span class="bulma-tag bulma-tag-success">Success</span>
+                            <span class="bulma-tag bulma-tag-warning">Warning</span>
+                            <span class="bulma-tag bulma-tag-danger">Danger</span>
+                        </div>
+                    </div>
+
+                    <!-- Table -->
+                    <div class="bulma-card component-card">
+                        <h3 class="bulma-h3">Table</h3>
+                        <table class="bulma-table">
+                            <thead>
+                                <tr>
+                                    <th>Project</th>
+                                    <th>Status</th>
+                                    <th>Progress</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Website Redesign</td>
+                                    <td><span class="bulma-tag bulma-tag-success">Active</span></td>
+                                    <td>75%</td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile App</td>
+                                    <td><span class="bulma-tag bulma-tag-warning">In Progress</span></td>
+                                    <td>45%</td>
+                                </tr>
+                                <tr>
+                                    <td>Marketing Campaign</td>
+                                    <td><span class="bulma-tag bulma-tag-success">Almost Done</span></td>
+                                    <td>90%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bulma-footer">
+        <div class="bulma-container">
+            <div class="footer-content">
+                <div class="footer-brand">Bulma</div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="https://bulma.io/" target="_blank">Official Website</a>
+                        <a href="https://bulma.io/documentation/" target="_blank">Documentation</a>
+                        <a href="https://github.com/jgthms/bulma" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bulma Component Showcase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/bulma.js"></script>
+</body>
+</html>
