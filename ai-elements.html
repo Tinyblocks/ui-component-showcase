@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Elements Component Showcase</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%236341F5'/%3E%3Ctext x='50' y='70' font-family='system-ui, -apple-system, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3EAI%3C/text%3E%3C/svg%3E">
+    <link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%236341F5'/%3E%3Ctext x='50' y='70' font-family='system-ui, -apple-system, sans-serif' font-size='70' font-weight='bold' fill='white' text-anchor='middle'%3EAI%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles/ai-elements.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="ai-nav">
+        <div class="ai-container">
+            <div class="ai-nav-brand">AI Elements</div>
+            <button class="burger-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="ai-nav-links">
+                <a href="#chatbot-demo">Chatbot</a>
+                <a href="#conversations-demo">Conversations</a>
+                <a href="#workflow-demo">Workflow</a>
+                <a href="#components-demo">Components</a>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-overlay">
+        <button class="menu-close-btn" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <nav class="mobile-nav">
+            <a href="#chatbot-demo">Chatbot</a>
+            <a href="#conversations-demo">Conversations</a>
+            <a href="#workflow-demo">Workflow</a>
+            <a href="#components-demo">Components</a>
+        </nav>
+    </div>
+
+    <section class="hero ai-section">
+        <div class="ai-container">
+            <h1 class="ai-h1">AI Elements</h1>
+            <p class="ai-subtitle">Component library for building AI-native applications</p>
+            <p class="ai-description">Explore pre-built components for chatbots, conversations, messages, and AI workflows built on top of shadcn/ui</p>
+            <div class="hero-cta" style="margin-top: 32px;">
+                <a href="https://ai-sdk.dev/elements" target="_blank" class="ai-btn-primary ai-btn-large">Visit AI Elements →</a>
+            </div>
+            <a href="#chatbot-demo" class="scroll-down-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="chatbot-demo" class="demo-section ai-section">
+        <div class="ai-container">
+            <div class="demo-header">
+                <h2 class="ai-h2">Interactive Chatbot Demo</h2>
+                <p class="demo-description">Try out a fully interactive chatbot interface with simulated AI responses</p>
+            </div>
+            <div class="demo-content">
+                <div class="chatbot-container">
+                    <div class="chatbot-header">
+                        <div class="chatbot-title">
+                            <div class="chatbot-avatar">AI</div>
+                            <div>
+                                <div class="chatbot-name">AI Assistant</div>
+                                <div class="chatbot-status">Online</div>
+                            </div>
+                        </div>
+                        <button class="chatbot-settings-btn" aria-label="Settings">⚙️</button>
+                    </div>
+                    <div class="chatbot-messages" id="chatbotMessages">
+                        <div class="message ai-message">
+                            <div class="message-content">
+                                <div class="message-text">Hello! I'm your AI assistant. I can help you with text analysis, code generation, data analysis, and more. Try asking me something!</div>
+                                <div class="message-time">Just now</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chatbot-input-container">
+                        <div class="chatbot-input-wrapper">
+                            <input type="text" id="chatbotInput" class="chatbot-input" placeholder="Type your message..." autocomplete="off">
+                            <button id="chatbotSendBtn" class="chatbot-send-btn" aria-label="Send message">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="chatbot-suggestions">
+                            <button class="suggestion-btn" data-suggestion="Analyze this text: The quick brown fox jumps over the lazy dog">Analyze text</button>
+                            <button class="suggestion-btn" data-suggestion="Generate code for a React button component">Generate code</button>
+                            <button class="suggestion-btn" data-suggestion="Analyze this data: Sales increased 25% this quarter">Analyze data</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conversations-demo" class="demo-section ai-section">
+        <div class="ai-container">
+            <div class="demo-header">
+                <h2 class="ai-h2">Conversation Examples</h2>
+                <p class="demo-description">See how AI Elements handles different types of conversations and interactions</p>
+            </div>
+            <div class="demo-content">
+                <div class="conversations-grid">
+                    <!-- Text Analysis Conversation -->
+                    <div class="conversation-card ai-card">
+                        <h3 class="ai-h3">Text Analysis</h3>
+                        <div class="conversation-example">
+                            <div class="message user-message">
+                                <div class="message-content">
+                                    <div class="message-text">Can you analyze the sentiment of this text: "I'm really excited about the new product launch!"</div>
+                                    <div class="message-time">2:30 PM</div>
+                                </div>
+                            </div>
+                            <div class="message ai-message">
+                                <div class="message-content">
+                                    <div class="message-text">
+                                        <strong>Sentiment Analysis:</strong><br>
+                                        Overall sentiment: <span class="sentiment-positive">Positive</span><br>
+                                        Confidence: 95%<br><br>
+                                        The text expresses strong positive emotion with words like "excited" and "really," indicating enthusiasm about the product launch.
+                                    </div>
+                                    <div class="message-time">2:30 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Code Generation Conversation -->
+                    <div class="conversation-card ai-card">
+                        <h3 class="ai-h3">Code Generation</h3>
+                        <div class="conversation-example">
+                            <div class="message user-message">
+                                <div class="message-content">
+                                    <div class="message-text">Create a React button component with hover effects</div>
+                                    <div class="message-time">3:15 PM</div>
+                                </div>
+                            </div>
+                            <div class="message ai-message">
+                                <div class="message-content">
+                                    <div class="message-text">
+                                        <pre class="code-block"><code>import React from 'react';
+import './Button.css';
+
+function Button({ children, onClick }) {
+  return (
+    &lt;button 
+      className="custom-button"
+      onClick={onClick}
+    &gt;
+      {children}
+    &lt;/button&gt;
+  );
+}
+
+export default Button;</code></pre>
+                                        <div class="code-actions">
+                                            <button class="code-action-btn">Copy</button>
+                                            <button class="code-action-btn">Run</button>
+                                        </div>
+                                    </div>
+                                    <div class="message-time">3:15 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Analysis Conversation -->
+                    <div class="conversation-card ai-card">
+                        <h3 class="ai-h3">Data Analysis</h3>
+                        <div class="conversation-example">
+                            <div class="message user-message">
+                                <div class="message-content">
+                                    <div class="message-text">Help me understand this data: Q1: $50k, Q2: $75k, Q3: $90k, Q4: $110k</div>
+                                    <div class="message-time">4:45 PM</div>
+                                </div>
+                            </div>
+                            <div class="message ai-message">
+                                <div class="message-content">
+                                    <div class="message-text">
+                                        <strong>Data Insights:</strong><br><br>
+                                        • <strong>Total Revenue:</strong> $325,000<br>
+                                        • <strong>Average per Quarter:</strong> $81,250<br>
+                                        • <strong>Growth Trend:</strong> Consistent upward trajectory<br>
+                                        • <strong>Q4 vs Q1:</strong> 120% increase<br><br>
+                                        The data shows strong, consistent growth throughout the year with a significant increase from Q1 to Q4.
+                                    </div>
+                                    <div class="message-time">4:45 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="workflow-demo" class="demo-section ai-section">
+        <div class="ai-container">
+            <div class="demo-header">
+                <h2 class="ai-h2">Workflow Demo</h2>
+                <p class="demo-description">Visual workflow steps showing AI process flows and task management</p>
+            </div>
+            <div class="demo-content">
+                <div class="workflow-container ai-card">
+                    <h3 class="ai-h3">AI Processing Workflow</h3>
+                    <div class="workflow-steps">
+                        <div class="workflow-step completed">
+                            <div class="workflow-step-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="workflow-step-content">
+                                <div class="workflow-step-title">Input Received</div>
+                                <div class="workflow-step-desc">User query processed</div>
+                            </div>
+                        </div>
+                        <div class="workflow-connector"></div>
+                        <div class="workflow-step completed">
+                            <div class="workflow-step-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="workflow-step-content">
+                                <div class="workflow-step-title">Analyzing</div>
+                                <div class="workflow-step-desc">Processing context and intent</div>
+                            </div>
+                        </div>
+                        <div class="workflow-connector"></div>
+                        <div class="workflow-step active">
+                            <div class="workflow-step-icon">
+                                <div class="workflow-spinner"></div>
+                            </div>
+                            <div class="workflow-step-content">
+                                <div class="workflow-step-title">Generating Response</div>
+                                <div class="workflow-step-desc">Creating AI response</div>
+                            </div>
+                        </div>
+                        <div class="workflow-connector"></div>
+                        <div class="workflow-step pending">
+                            <div class="workflow-step-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="workflow-step-content">
+                                <div class="workflow-step-title">Response Ready</div>
+                                <div class="workflow-step-desc">Awaiting completion</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task-container ai-card">
+                    <h3 class="ai-h3">Task List Component</h3>
+                    <div class="task-list">
+                        <div class="task-item completed">
+                            <div class="task-checkbox">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="task-content">
+                                <div class="task-title">Process user input</div>
+                                <div class="task-desc">Analyze query intent and context</div>
+                            </div>
+                        </div>
+                        <div class="task-item completed">
+                            <div class="task-checkbox">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="task-content">
+                                <div class="task-title">Gather relevant data</div>
+                                <div class="task-desc">Retrieve information from knowledge base</div>
+                            </div>
+                        </div>
+                        <div class="task-item active">
+                            <div class="task-checkbox">
+                                <div class="task-checkbox-spinner"></div>
+                            </div>
+                            <div class="task-content">
+                                <div class="task-title">Generate response</div>
+                                <div class="task-desc">Creating AI-generated content</div>
+                            </div>
+                        </div>
+                        <div class="task-item pending">
+                            <div class="task-checkbox">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="task-content">
+                                <div class="task-title">Format output</div>
+                                <div class="task-desc">Prepare response for display</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="components-demo" class="demo-section ai-section">
+        <div class="ai-container">
+            <div class="demo-header">
+                <h2 class="ai-h2">Individual Components</h2>
+                <p class="demo-description">Explore AI Elements' core components in isolation</p>
+            </div>
+            <div class="components-grid">
+                <!-- Message Component -->
+                <div class="ai-card component-card">
+                    <h3 class="ai-h3">Message</h3>
+                    <div class="component-demo">
+                        <div class="message user-message">
+                            <div class="message-content">
+                                <div class="message-text">User message example</div>
+                                <div class="message-time">2:30 PM</div>
+                            </div>
+                        </div>
+                        <div class="message ai-message">
+                            <div class="message-content">
+                                <div class="message-text">AI assistant response</div>
+                                <div class="message-time">2:30 PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Response Component -->
+                <div class="ai-card component-card">
+                    <h3 class="ai-h3">Response</h3>
+                    <div class="component-demo">
+                        <div class="response-component">
+                            <div class="response-header">
+                                <span class="response-label">AI Response</span>
+                            </div>
+                            <div class="response-content">
+                                This is a formatted AI response with proper styling and structure.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task Component -->
+                <div class="ai-card component-card">
+                    <h3 class="ai-h3">Task</h3>
+                    <div class="component-demo">
+                        <div class="task-item completed">
+                            <div class="task-checkbox">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="task-content">
+                                <div class="task-title">Completed task example</div>
+                            </div>
+                        </div>
+                        <div class="task-item active">
+                            <div class="task-checkbox">
+                                <div class="task-checkbox-spinner"></div>
+                            </div>
+                            <div class="task-content">
+                                <div class="task-title">Active task example</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sources Component -->
+                <div class="ai-card component-card">
+                    <h3 class="ai-h3">Sources</h3>
+                    <div class="component-demo">
+                        <div class="sources-component">
+                            <div class="sources-header">
+                                <span class="sources-label">Sources</span>
+                                <span class="sources-count">3</span>
+                            </div>
+                            <div class="sources-list">
+                                <a href="#" class="source-item">
+                                    <span class="source-icon">📄</span>
+                                    <span class="source-title">Documentation.pdf</span>
+                                </a>
+                                <a href="#" class="source-item">
+                                    <span class="source-icon">🔗</span>
+                                    <span class="source-title">ai-sdk.dev/elements</span>
+                                </a>
+                                <a href="#" class="source-item">
+                                    <span class="source-icon">📚</span>
+                                    <span class="source-title">API Reference</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Typing Indicator -->
+                <div class="ai-card component-card">
+                    <h3 class="ai-h3">Typing Indicator</h3>
+                    <div class="component-demo">
+                        <div class="message ai-message">
+                            <div class="message-content">
+                                <div class="typing-indicator">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code Block -->
+                <div class="ai-card component-card">
+                    <h3 class="ai-h3">Code Block</h3>
+                    <div class="component-demo">
+                        <pre class="code-block"><code>function example() {
+  return 'AI Elements';
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="ai-footer">
+        <div class="ai-container">
+            <div class="footer-content">
+                <div class="footer-brand">AI Elements</div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="https://ai-sdk.dev/elements" target="_blank">Official Website</a>
+                        <a href="https://ai-sdk.dev/elements/overview" target="_blank">Documentation</a>
+                        <a href="https://github.com/vercel/ai" target="_blank">GitHub</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Community</h4>
+                        <a href="https://ai-sdk.dev/elements/overview" target="_blank">Getting Started</a>
+                        <a href="https://vercel.com" target="_blank">Vercel</a>
+                        <a href="https://github.com/vercel/ai/discussions" target="_blank">Discussions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI Elements Component Showcase Demo</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/ai-elements.js"></script>
+</body>
+</html>
+

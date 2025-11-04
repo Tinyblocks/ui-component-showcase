@@ -17,6 +17,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     window.scrollTo(0, 0);
+    initBurgerMenu();
     initTabs();
     initAccordion();
     initSwitches();
@@ -29,6 +30,63 @@ document.addEventListener('DOMContentLoaded', function() {
     initTestimonials();
     initPricingCards();
 });
+
+// Burger Menu Functionality
+function initBurgerMenu() {
+    const burgerBtn = document.querySelector('.burger-menu-btn');
+    const menuOverlay = document.querySelector('.menu-overlay');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+    const body = document.body;
+
+    if (!burgerBtn || !menuOverlay) return;
+
+    burgerBtn.addEventListener('click', function() {
+        const isOpen = menuOverlay.classList.contains('active');
+        if (isOpen) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    const closeBtn = document.querySelector('.menu-close-btn');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            closeMenu();
+        });
+    }
+
+    menuOverlay.addEventListener('click', function(e) {
+        if (e.target === menuOverlay) {
+            closeMenu();
+        }
+    });
+
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            closeMenu();
+        });
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && menuOverlay.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+
+    function openMenu() {
+        menuOverlay.classList.add('active');
+        burgerBtn.classList.add('active');
+        body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+        menuOverlay.classList.remove('active');
+        burgerBtn.classList.remove('active');
+        body.style.overflow = '';
+    }
+}
 
 function initTabs() {
     const tabButtons = document.querySelectorAll('.cuicui-tab[data-tab]');

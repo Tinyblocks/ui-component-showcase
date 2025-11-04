@@ -7,6 +7,8 @@
 /* Prevent automatic scroll to hash on page load */
 html {
     scroll-behavior: auto;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* Enable smooth scrolling only via JavaScript */
@@ -20,6 +22,9 @@ body {
     color: #000000;
     background: #ffffff;
     min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 .heroui-container {
@@ -56,6 +61,140 @@ body {
     display: flex;
     gap: 32px;
     align-items: center;
+}
+
+/* Burger Menu Button */
+.burger-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 28px;
+    height: 28px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.burger-menu-btn span {
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.burger-menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.burger-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Menu Overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh; /* Dynamic viewport height for mobile */
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.menu-overlay::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Menu Close Button */
+.menu-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    z-index: 1001;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+    touch-action: manipulation;
+}
+
+.menu-close-btn:hover,
+.menu-close-btn:active {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.menu-close-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.mobile-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: color 0.2s;
+    padding: 12px 24px;
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+    touch-action: manipulation;
+}
+
+.mobile-nav a:hover,
+.mobile-nav a:active {
+    color: #a855f7;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
 }
 
 .heroui-nav-links a {
@@ -233,6 +372,9 @@ body {
 /* Demo Sections */
 .demo-section {
     padding: 80px 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .demo-section:nth-child(even) {
@@ -304,6 +446,9 @@ body {
 
 .dashboard-stat-card {
     padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .stat-label {
@@ -348,6 +493,9 @@ body {
 
 .dashboard-section {
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .section-header {
@@ -379,6 +527,9 @@ body {
 
 .project-item {
     padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .project-info {
@@ -581,6 +732,9 @@ body {
 
 .component-card {
     min-height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .component-card-wide {
@@ -893,6 +1047,9 @@ body {
 .pricing-card {
     text-align: center;
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .pricing-card.featured {
@@ -957,6 +1114,12 @@ body {
     margin-top: 48px;
 }
 
+.testimonial-card {
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
 .testimonial-text {
     font-size: 0.9375rem;
     line-height: 1.75;
@@ -999,6 +1162,9 @@ body {
     color: #ffffff;
     padding: 48px 0 24px;
     margin-top: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .footer-content {
@@ -1046,13 +1212,60 @@ body {
     font-size: 0.875rem;
 }
 
+/* Responsive Design - All Breakpoints */
+
+/* Large Tablets and Below (1024px) */
+@media (max-width: 1024px) {
+    .heroui-container {
+        padding: 0 20px;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* Tablets and Below (768px) */
 @media (max-width: 768px) {
+    /* Typography */
     .heroui-h1 {
         font-size: 2.5rem;
     }
     
+    .heroui-h2 {
+        font-size: 2rem;
+    }
+    
     .heroui-subtitle {
         font-size: 1rem;
+    }
+    
+    .heroui-description {
+        font-size: 0.9375rem;
+    }
+    
+    /* Sections */
+    .heroui-section {
+        padding: 60px 0;
+    }
+    
+    /* Navigation */
+    .burger-menu-btn {
+        display: flex;
+    }
+    
+    .heroui-nav-links {
+        display: none;
+    }
+    
+    /* Hero Section */
+    .hero {
+        min-height: calc(100vh - 73px);
+        padding: 40px 0;
     }
     
     .hero-cta {
@@ -1060,23 +1273,7 @@ body {
         align-items: center;
     }
     
-    .heroui-nav-links {
-        flex-wrap: wrap;
-        gap: 12px;
-    }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .footer-links {
-        grid-template-columns: 1fr;
-    }
-    
-    .pricing-card.featured {
-        transform: scale(1);
-    }
-    
+    /* Dashboard */
     .dashboard-content {
         grid-template-columns: 1fr;
     }
@@ -1085,8 +1282,279 @@ body {
         grid-template-columns: 1fr;
     }
     
+    .project-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .project-stats {
+        width: 100%;
+        margin-top: 12px;
+    }
+    
+    .project-progress {
+        width: 100%;
+    }
+    
+    /* Pricing */
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+    
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Components */
+    .components-grid {
+        grid-template-columns: 1fr;
+    }
+    
     .component-card-wide {
         grid-column: span 1;
+    }
+    
+    /* Demo sections - prevent overflow */
+    .demo-section {
+        padding: 40px 0;
+        overflow-x: hidden;
+    }
+    
+    .demo-content {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    /* Ensure all sections are properly contained */
+    .heroui-container {
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    
+    /* Tabs */
+    .heroui-tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+    
+    .heroui-tabs::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .heroui-tab {
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    
+    /* Tables */
+    .heroui-table {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .heroui-table table {
+        min-width: 600px;
+    }
+    
+    /* Input Groups */
+    .input-group {
+        flex-direction: column;
+    }
+    
+    .input-group input,
+    .input-group select {
+        width: 100%;
+    }
+    
+    /* Buttons */
+    .heroui-buttons-demo {
+        flex-direction: column;
+    }
+    
+    .heroui-buttons-demo button {
+        width: 100%;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small Tablets (640px) */
+@media (max-width: 640px) {
+    .heroui-container {
+        padding: 0 16px;
+    }
+    
+    .heroui-h1 {
+        font-size: 2rem;
+    }
+    
+    .heroui-h2 {
+        font-size: 1.75rem;
+    }
+    
+    .heroui-section {
+        padding: 40px 0;
+    }
+    
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .dashboard-actions {
+        align-self: flex-end;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .activity-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .activity-icon {
+        align-self: flex-start;
+    }
+    
+    .team-avatars {
+        justify-content: center;
+    }
+}
+
+/* Mobile Phones (480px) */
+@media (max-width: 480px) {
+    .heroui-h1 {
+        font-size: 1.75rem;
+    }
+    
+    .heroui-h2 {
+        font-size: 1.5rem;
+    }
+    
+    .heroui-h3 {
+        font-size: 1.25rem;
+    }
+    
+    .heroui-subtitle {
+        font-size: 0.9375rem;
+    }
+    
+    .heroui-section {
+        padding: 32px 0;
+    }
+    
+    .demo-section {
+        padding: 40px 0;
+        overflow-x: hidden;
+    }
+    
+    .demo-description {
+        font-size: 0.875rem;
+    }
+    
+    .dashboard-stat-card {
+        padding: 12px;
+    }
+    
+    .stat-value {
+        font-size: 1.5rem;
+    }
+    
+    .dashboard-section {
+        padding: 16px;
+    }
+    
+    .project-item {
+        padding: 12px;
+    }
+    
+    .mobile-nav a {
+        font-size: 1.25rem;
+        padding: 10px 20px;
+        max-width: 240px;
+    }
+    
+    .menu-close-btn {
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .pricing-card {
+        padding: 20px;
+    }
+    
+    .testimonial-card {
+        padding: 20px;
+    }
+    
+    .component-card {
+        padding: 16px;
+    }
+}
+
+/* Small Phones (375px) */
+@media (max-width: 375px) {
+    .heroui-container {
+        padding: 0 12px;
+    }
+    
+    .heroui-h1 {
+        font-size: 1.5rem;
+    }
+    
+    .heroui-h2 {
+        font-size: 1.25rem;
+    }
+    
+    .dashboard-stat-card {
+        padding: 10px;
+    }
+    
+    .stat-value {
+        font-size: 1.25rem;
+    }
+    
+    .mobile-nav a {
+        font-size: 1.125rem;
+        padding: 8px 16px;
+        max-width: 200px;
+    }
+    
+    .menu-close-btn {
+        top: 16px;
+        right: 16px;
+        width: 36px;
+        height: 36px;
+    }
+    
+    .menu-close-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .heroui-card {
+        padding: 16px;
     }
 }
 

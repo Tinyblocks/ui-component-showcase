@@ -12,6 +12,11 @@
     <nav class="bootstrap-nav">
         <div class="bootstrap-container">
             <div class="bootstrap-nav-brand">Bootstrap</div>
+            <button class="burger-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="bootstrap-nav-links">
                 <a href="#dashboard-demo">Dashboard</a>
                 <a href="#pricing-demo">Pricing</a>
@@ -20,6 +25,19 @@
             </div>
         </div>
     </nav>
+    <div class="menu-overlay">
+        <button class="menu-close-btn" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <nav class="mobile-nav">
+            <a href="#dashboard-demo">Dashboard</a>
+            <a href="#pricing-demo">Pricing</a>
+            <a href="#testimonials-demo">Testimonials</a>
+            <a href="#components-demo">Components</a>
+        </nav>
+    </div>
 
     <section class="hero bootstrap-section">
         <div class="bootstrap-container">
