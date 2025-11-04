@@ -21,8 +21,22 @@
             <p class="description">Each library showcases the same components, including dashboards, pricing tables, testimonials, and interactive elements, allowing you to compare design approaches and implementation styles from Material-UI, Ant Design, and more.</p>
         </header>
         
+        <section class="filter-section">
+            <div class="filter-container">
+                <label class="filter-label">Filter by Framework:</label>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-framework="all">All</button>
+                    <button class="filter-btn" data-framework="React">React</button>
+                    <button class="filter-btn" data-framework="Vue">Vue</button>
+                    <button class="filter-btn" data-framework="Svelte">Svelte</button>
+                    <button class="filter-btn" data-framework="Solid">Solid</button>
+                    <button class="filter-btn" data-framework="HTML/CSS">No Framework</button>
+                </div>
+            </div>
+        </section>
+        
         <main class="library-grid">
-            <div class="library-card">
+            <div class="library-card" data-frameworks="React">
                 <h2>Material-UI</h2>
                 <div class="framework-tags">
                     <span class="framework-tag">React</span>
@@ -31,7 +45,7 @@
                 <a href="mui.html" class="btn">View Demo</a>
             </div>
             
-            <div class="library-card">
+            <div class="library-card" data-frameworks="React">
                 <h2>Ant Design</h2>
                 <div class="framework-tags">
                     <span class="framework-tag">React</span>
@@ -40,7 +54,7 @@
                 <a href="antd.html" class="btn">View Demo</a>
             </div>
             
-            <div class="library-card">
+            <div class="library-card" data-frameworks="React">
                 <h2>Shadcn UI</h2>
                 <div class="framework-tags">
                     <span class="framework-tag">React</span>
@@ -49,7 +63,7 @@
                 <a href="shadcn.html" class="btn">View Demo</a>
             </div>
             
-            <div class="library-card">
+            <div class="library-card" data-frameworks="React">
                 <h2>Untitled UI</h2>
                 <div class="framework-tags">
                     <span class="framework-tag">React</span>
@@ -58,7 +72,7 @@
                 <a href="untitled.html" class="btn">View Demo</a>
             </div>
             
-            <div class="library-card">
+            <div class="library-card" data-frameworks="React">
                 <h2>HeroUI</h2>
                 <div class="framework-tags">
                     <span class="framework-tag">React</span>
@@ -67,7 +81,7 @@
                 <a href="heroui.html" class="btn">View Demo</a>
             </div>
             
-            <div class="library-card">
+            <div class="library-card" data-frameworks="React">
                 <h2>Chakra UI</h2>
                 <div class="framework-tags">
                     <span class="framework-tag">React</span>
@@ -76,7 +90,7 @@
                 <a href="chakra.html" class="btn">View Demo</a>
             </div>
             
-            <div class="library-card">
+            <div class="library-card" data-frameworks="HTML/CSS">
                 <h2>Uiverse</h2>
                 <div class="framework-tags">
                     <span class="framework-tag">HTML/CSS</span>
@@ -85,7 +99,7 @@
                 <a href="uiverse.html" class="btn">View Demo</a>
             </div>
             
-            <div class="library-card">
+            <div class="library-card" data-frameworks="React">
                 <h2>Aceternity UI</h2>
                 <div class="framework-tags">
                     <span class="framework-tag">React</span>
@@ -94,7 +108,7 @@
                 <a href="aceternity.html" class="btn">View Demo</a>
             </div>
             
-            <div class="library-card">
+            <div class="library-card" data-frameworks="React Vue Solid Svelte">
                 <h2>Park UI</h2>
                 <div class="framework-tags">
                     <span class="framework-tag">React</span>
@@ -106,7 +120,7 @@
                 <a href="parkui.html" class="btn">View Demo</a>
             </div>
             
-            <div class="library-card">
+            <div class="library-card" data-frameworks="React Vue Svelte">
                 <h2>Franken UI</h2>
                 <div class="framework-tags">
                     <span class="framework-tag">React</span>
@@ -117,7 +131,7 @@
                 <a href="franken.html" class="btn">View Demo</a>
             </div>
             
-            <div class="library-card">
+            <div class="library-card" data-frameworks="React">
                 <h2>Magic UI</h2>
                 <div class="framework-tags">
                     <span class="framework-tag">React</span>
@@ -126,7 +140,7 @@
                 <a href="magicui.html" class="btn">View Demo</a>
             </div>
             
-            <div class="library-card">
+            <div class="library-card" data-frameworks="React">
                 <h2>CuiCui</h2>
                 <div class="framework-tags">
                     <span class="framework-tag">React</span>
@@ -135,7 +149,7 @@
                 <a href="cuicui.html" class="btn">View Demo</a>
             </div>
             
-            <div class="library-card">
+            <div class="library-card" data-frameworks="React Vue Svelte">
                 <h2>Float UI</h2>
                 <div class="framework-tags">
                     <span class="framework-tag">React</span>
@@ -146,7 +160,7 @@
                 <a href="floatui.html" class="btn">View Demo</a>
             </div>
             
-            <div class="library-card">
+            <div class="library-card" data-frameworks="React">
                 <h2>AI Elements</h2>
                 <div class="framework-tags">
                     <span class="framework-tag">React</span>
@@ -160,5 +174,6 @@
             <p>UI Component Showcase Directory - Compare Popular UI Libraries</p>
         </footer>
     </div>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
