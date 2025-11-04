@@ -113,6 +113,24 @@ body {
     letter-spacing: -0.01em;
 }
 
+.library-card .framework-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.library-card .framework-tag {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--primary-teal);
+    background-color: rgba(13, 148, 136, 0.1);
+    border-radius: 12px;
+    letter-spacing: 0.01em;
+}
+
 .library-card .tagline {
     color: var(--text-gray);
     font-size: 0.9375rem;
